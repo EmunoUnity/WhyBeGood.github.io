@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Why Be Good Expanded 2.0.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Why Be Good Expanded 2.0" startnode="79" creator="Twine" creator-version="2.8.0" format="Harlowe" format-version="3.3.7" ifid="29622C6D-AE98-46F2-B15E-11B9E32D685D" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="footer" color="orange"></tw-tag><tw-tag name="header" color="green"></tw-tag><tw-passagedata pid="1" name="Disclaimer" tags="donotshowinventory" position="700,150" size="100,100">
+<tw-storydata name="Why Be Good Expanded 2.0" startnode="79" creator="Twine" creator-version="2.7.1" format="Harlowe" format-version="3.3.7" ifid="29622C6D-AE98-46F2-B15E-11B9E32D685D" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="footer" color="orange"></tw-tag><tw-tag name="header" color="green"></tw-tag><tw-passagedata pid="1" name="Disclaimer" tags="donotshowinventory" position="700,150" size="100,100">
 Disclaimer: this twine contains unparalleled amounts of AWSOME and COOL THINGS. As a result this twine may be a very large to show everything that we have in store.(all and all don&#39;t hate us to much Mabee.)
 
 [[Continue-&gt;The Start]]</tw-passagedata><tw-passagedata pid="2" name="The Start" tags="donotshowinventory" position="700,300" size="100,100">
@@ -273,29 +273,34 @@ Felling confident with being able to handle the creatures that had been encounte
 [[ Nobody deserves to be adandoned, no matter what anyone says. Come one let me help you get back home, your parents must be worried sick.-&gt;sidequest end]]</tw-passagedata><tw-passagedata pid="38" name="Other Thing2" tags="" position="1125,675" size="100,100">
 You mange to get enough money to hire a few mercenaries to do your bidding. A few months later you manage to assemble what you would consider to be a small army. Rallying your forces, you decide to raid the next village over and burn it to the ground.
 
-[[continue-&gt;Rading Village]]</tw-passagedata><tw-passagedata pid="39" name="Rading Village" tags="" position="1250,800" size="100,100">//Same type of code as the one noted in the pervious node. Again not sure if you want to use the code that I already have for it. Though it also needs to hev the chance for the army yo betray the player//
+[[continue-&gt;Rading Village]]</tw-passagedata><tw-passagedata pid="39" name="Rading Village" tags="" position="1250,800" size="100,100">(set: $raidstatus to (random: 1, 6))
 
-//failed raid//
+(set:$karma to it -1)
+
+(if: $raidstatus is 6)[
 Your army betrays you!
 
   [[Betrayal!-&gt;berayed]]
   
+]
 
-//shows up when the player hits a certin karma thershold//
-
+(if: $karma &lt;= -7 and $raidstatus &lt; 6)[
 (text-style:&quot;italic&quot;)[Well Done! your getting pretty good at this, your starting to fill the role of bad guy rather nicely. Now tell me are you satisfied with just pillaging or killing? Or do you wish to get even higher to finally claim something that you could call your own . What Do you say?]
   
  [[What did you have in mind?-&gt;Proposition]]
  
  [[Im actually pretty content here, there isn&#39;t much more that I desire-&gt;Altered Vers]]
+ ]
   
   
-  //Sucessfull Raid
+(if: $raidstatus &lt;6 and $karma &gt; -7)[
   The raid was a sucess! 
 
 Screams and the warmth of fire filled the air as you and your army kill and pillage to your hearts content. Taking everything that you could carry and laoding it all on to wagons before finishing off the surviors and moving on to the next village.
 
 [[Move on to the next village|Rading Village]] 
+
+]
 
 
 
