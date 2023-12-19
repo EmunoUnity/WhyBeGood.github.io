@@ -3,319 +3,425 @@
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1" name="viewport">
-<title>Hinkley_WhyBeGood?</title>
+<title>Why Be Good Expanded 2.0</title>
 <style title="Twine CSS">@keyframes appear{0%{opacity:0}to{opacity:1}}@keyframes fade-in-out{0%,to{opacity:0}50%{opacity:1}}@keyframes rumble{25%{top:-0.1em}75%{top:.1em}0%,to{top:0px}}@keyframes shudder{25%{left:.1em}75%{left:-0.1em}0%,to{left:0px}}@keyframes buoy{25%{top:.25em}75%{top:-0.25em}0%,to{top:0px}}@keyframes sway{25%{left:.25em}75%{left:-0.25em}0%,to{left:0px}}@keyframes pulse{0%{transform:scale(0, 0)}20%{transform:scale(1.2, 1.2)}40%{transform:scale(0.9, 0.9)}60%{transform:scale(1.05, 1.05)}80%{transform:scale(0.925, 0.925)}to{transform:scale(1, 1)}}@keyframes zoom-in{0%{transform:scale(0, 0)}to{transform:scale(1, 1)}}@keyframes shudder-in{0%,to{transform:translateX(0em)}5%,25%,45%{transform:translateX(-1em)}15%,35%,55%{transform:translateX(1em)}65%{transform:translateX(-0.6em)}75%{transform:translateX(0.6em)}85%{transform:translateX(-0.2em)}95%{transform:translateX(0.2em)}}@keyframes rumble-in{0%,to{transform:translateY(0em)}5%,25%,45%{transform:translateY(-1em)}15%,35%,55%{transform:translateY(1em)}65%{transform:translateY(-0.6em)}75%{transform:translateY(0.6em)}85%{transform:translateY(-0.2em)}95%{transform:translateY(0.2em)}}@keyframes fidget{0%,8.1%,82.1%,31.1%,38.1%,44.1%,40.1%,47.1%,74.1%,16.1%,27.1%,72.1%,24.1%,95.1%,6.1%,36.1%,20.1%,4.1%,91.1%,14.1%,87.1%,to{left:0px;top:0px}8%,82%,31%,38%,44%{left:-1px}40%,47%,74%,16%,27%{left:1px}72%,24%,95%,6%,36%{top:-1px}20%,4%,91%,14%,87%{top:1px}}@keyframes slide-right{0%{transform:translateX(-100vw)}}@keyframes slide-left{0%{transform:translateX(100vw)}}@keyframes slide-up{0%{transform:translateY(100vh)}}@keyframes slide-down{0%{transform:translateY(-100vh)}}@keyframes fade-right{0%{opacity:0;transform:translateX(-1em)}to{opacity:1}}@keyframes fade-left{0%{opacity:0;transform:translateX(1em)}to{opacity:1}}@keyframes fade-up{0%{opacity:0;transform:translateY(1em)}to{opacity:1}}@keyframes fade-down{0%{opacity:0;transform:translateY(-1em)}to{opacity:1}}@keyframes flicker{0%,29%,31%,63%,65%,77%,79%,86%,88%,91%,93%{opacity:0}30%{opacity:.2}64%{opacity:.4}78%{opacity:.6}87%{opacity:.8}92%,to{opacity:1}}@keyframes blur{0%{filter:blur(2rem);opacity:0}25%{opacity:1}to{filter:blur(0rem);opacity:1}}.dom-debug-mode tw-story,.dom-debug-mode tw-passage,.dom-debug-mode tw-sidebar,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{outline:1px solid #f5a3da;min-height:32px;display:block !important}.dom-debug-mode tw-story::before,.dom-debug-mode tw-passage::before,.dom-debug-mode tw-sidebar::before,.dom-debug-mode tw-include::before,.dom-debug-mode tw-hook::before,.dom-debug-mode tw-expression::before,.dom-debug-mode tw-link::before,.dom-debug-mode tw-dialog::before,.dom-debug-mode tw-columns::before,.dom-debug-mode tw-column::before,.dom-debug-mode tw-align::before{position:absolute;top:0;left:0;height:16px;background-color:#f5a3da;color:#000;font-size:16px;font-weight:normal;font-style:normal;font-family:monospace;display:inline-block;line-height:100%;white-space:pre;z-index:999997}.dom-debug-mode tw-story:hover,.dom-debug-mode tw-passage:hover,.dom-debug-mode tw-sidebar:hover,.dom-debug-mode tw-include:hover,.dom-debug-mode tw-hook:hover,.dom-debug-mode tw-expression:hover,.dom-debug-mode tw-link:hover,.dom-debug-mode tw-dialog:hover,.dom-debug-mode tw-columns:hover,.dom-debug-mode tw-column:hover,.dom-debug-mode tw-align:hover{outline:1px solid #fc9}.dom-debug-mode tw-story:hover::before,.dom-debug-mode tw-passage:hover::before,.dom-debug-mode tw-sidebar:hover::before,.dom-debug-mode tw-include:hover::before,.dom-debug-mode tw-hook:hover::before,.dom-debug-mode tw-expression:hover::before,.dom-debug-mode tw-link:hover::before,.dom-debug-mode tw-dialog:hover::before,.dom-debug-mode tw-columns:hover::before,.dom-debug-mode tw-column:hover::before,.dom-debug-mode tw-align:hover::before{background-color:#fc9;transition:background-color 1s}.dom-debug-mode tw-passage,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{padding:1em;margin:0}.dom-debug-mode tw-story::before{content:'<tw-story tags="' attr(tags) '">'}.dom-debug-mode tw-passage::before{top:-16px;content:'<tw-passage tags="' attr(tags) '">'}.dom-debug-mode tw-sidebar::before{top:-16px;content:"<tw-sidebar>"}.dom-debug-mode tw-hook::before{content:'<tw-hook name="' attr(name) '">'}.dom-debug-mode tw-expression::before{content:'<tw-expression name="' attr(name) '">'}.dom-debug-mode tw-link::before{content:'<tw-link name="' attr(name) '">'}.dom-debug-mode tw-dialog::before{content:"<tw-dialog>"}.dom-debug-mode tw-columns::before{content:"<tw-columns>"}.dom-debug-mode tw-column::before{content:"<tw-column>"}.dom-debug-mode tw-align::before{content:"<tw-align>"}.dom-debug-mode tw-include::before{content:'<tw-include type="' attr(type) '" name="' attr(name) '">'}tw-open-button[goto]{display:none}.debug-mode tw-open-button[replay],.debug-mode tw-open-button[goto]{display:inline}.debug-mode tw-expression{display:inline-block !important}.debug-mode tw-expression[type=variable]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"$" attr(name)}.debug-mode tw-expression[type=tempVariable]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"_" attr(name)}.debug-mode tw-expression[return=boolean]{background-color:rgba(179,179,179,.2)}.debug-mode tw-expression[return=array]{background-color:rgba(255,102,102,.2)}.debug-mode tw-expression[return=dataset]{background-color:rgba(255,128,0,.2)}.debug-mode tw-expression[return=number]{background-color:rgba(255,179,102,.2)}.debug-mode tw-expression[return=datamap]{background-color:rgba(255,255,102,.2)}.debug-mode tw-expression[return=changer]{background-color:rgba(179,255,102,.2)}.debug-mode tw-expression[return=lambda]{background-color:rgba(102,255,102,.2)}.debug-mode tw-expression[return=hookname]{background-color:rgba(102,255,204,.2)}.debug-mode tw-expression[return=string]{background-color:rgba(102,255,255,.2)}.debug-mode tw-expression[return=datatype]{background-color:rgba(102,153,255,.2)}.debug-mode tw-expression[return=gradient],.debug-mode tw-expression[return=colour]{background-color:rgba(204,102,255,.2)}.debug-mode tw-expression[return=instant],.debug-mode tw-expression[return=macro]{background-color:rgba(240,117,199,.2)}.debug-mode tw-expression[return=command]{background-color:rgba(153,153,255,.2)}.debug-mode tw-expression.false{background-color:rgba(255,0,0,.2) !important}.debug-mode tw-expression[type=macro]::before{content:"(" attr(name) ":)";padding:0 .5rem;font-size:1rem;vertical-align:middle;line-height:normal;background-color:inherit;border:1px solid rgba(255,255,255,.5)}.debug-mode tw-expression[title]:not([title=""]){cursor:help}.debug-mode tw-hook{background-color:rgba(0,85,255,.1) !important}.debug-mode tw-hook::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"["}.debug-mode tw-hook::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"]"}.debug-mode tw-hook[name]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"]<" attr(name) "|"}.debug-mode tw-pseudo-hook{background-color:rgba(255,170,0,.1) !important}.debug-mode tw-collapsed::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"{"}.debug-mode tw-collapsed::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"}"}.debug-mode tw-verbatim::before,.debug-mode tw-verbatim::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"`"}.debug-mode tw-align[style*="text-align: center"]{background:linear-gradient(to right, hsla(14deg, 100%, 87%, 0) 0%, hsla(14deg, 100%, 87%, 0.25) 50%, hsla(14deg, 100%, 87%, 0) 100%)}.debug-mode tw-align[style*="text-align: left"]{background:linear-gradient(to right, hsla(14deg, 100%, 87%, 0.25) 0%, hsla(14deg, 100%, 87%, 0) 100%)}.debug-mode tw-align[style*="text-align: right"]{background:linear-gradient(to right, hsla(14deg, 100%, 87%, 0) 0%, hsla(14deg, 100%, 87%, 0.25) 100%)}.debug-mode tw-column{background-color:rgba(189,228,255,.2)}.debug-mode tw-enchantment{animation:enchantment .5s infinite;border:1px solid}.debug-mode tw-link::after,.debug-mode tw-broken-link::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:attr(passage-name)}.debug-mode tw-include{background-color:rgba(204,128,51,.1)}.debug-mode tw-include::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:attr(type) ' "' attr(name) '"'}.debug-dialogs tw-backdrop:not(.eval-replay):not(.harlowe-crash){pointer-events:none;opacity:.1}tw-eval-replay tw-eval-code,tw-eval-replay tw-eval-explanation{max-height:20vh;overflow:auto;margin:10px auto}tw-eval-replay tw-eval-code{display:block;font-family:monospace;padding-bottom:1ex;border-bottom:2px solid gray}tw-eval-replay tw-eval-explanation{display:block;text-align:center}tw-eval-replay tw-eval-explanation>code{white-space:pre-wrap}tw-eval-replay tw-eval-explanation>code.from-block{width:40%;display:inline-block;text-align:left;max-height:4em;overflow-wrap:anywhere;overflow-y:scroll}tw-eval-replay tw-eval-explanation>code.from-block~.to-desc{width:calc(40% - 2em);margin-left:2em;display:inline-block}tw-eval-replay tw-eval-explanation>code.from-block+span::after{content:"..."}tw-eval-replay tw-eval-explanation>code.from-inline{text-align:right}tw-eval-replay tw-eval-explanation>:nth-child(2){white-space:pre}tw-eval-replay tw-eval-explanation>.to-desc{text-align:left}tw-eval-replay tw-eval-explanation>table{width:100%;margin-top:1em}tw-eval-replay tw-eval-explanation>table td{white-space:pre-wrap !important;word-wrap:anywhere}tw-eval-replay tw-eval-reason{text-align:center;font-size:80%;font-style:italic;display:block}tw-eval-replay tw-eval-it{text-align:center;font-size:80%;display:block}tw-eval-replay tw-dialog-links{display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around}@keyframes enchantment{0%,to{border-color:#ffb366}50%{border-color:#6fc}}tw-debugger{position:fixed;box-sizing:border-box;bottom:0;right:0;z-index:999999;min-width:14em;min-height:1em;padding:0em .5em .5em 1em;font-size:1.25em;font-family:sans-serif;color:#262626;background-color:#fff;border-left:solid #262626 2px;border-top:solid #262626 2px;border-top-left-radius:.5em;opacity:1}tw-debugger.fade-panel:not(:hover){opacity:.33}tw-debugger.theme-dark{color:#d9d9d9;background-color:#000}tw-debugger.theme-dark{border-color:#d9d9d9 rgba(0,0,0,0) rgba(0,0,0,0) #d9d9d9}tw-debugger select{margin-right:1em;width:12em}tw-debugger button,tw-debugger tw-link{border-radius:3px;border:solid #999 1px;margin:auto 4px;color:#262626;background-color:#fff;cursor:pointer}tw-debugger button.enabled,tw-debugger tw-link.enabled{color:#000;background-color:#d9d9d9;box-shadow:inset #999 3px 5px .5em}tw-debugger.theme-dark button,tw-debugger.theme-dark tw-link{color:#d9d9d9;background-color:#000;border-color:#666}tw-debugger.theme-dark button.enabled,tw-debugger.theme-dark tw-link.enabled{color:#e6e6e6;background-color:#424242;box-shadow:inset #666 3px 5px .5em}tw-debugger button{font-size:1em;overflow-x:hidden;text-overflow:ellipsis;white-space:pre}tw-debugger tw-link{font-size:1.25em;border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}tw-debugger tw-link:hover{border-color:#262626;color:#262626}tw-debugger.theme-dark tw-link:hover{border-color:#d9d9d9;color:#d9d9d9}tw-debugger tw-dialog{background-color:#fff;color:#000;font-size:1.25em}tw-debugger.theme-dark tw-dialog{background-color:#000;color:#e6e6e6}tw-debugger .panel{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;position:absolute;bottom:100%;left:-2px;right:0;padding:1em;overflow-y:scroll;overflow-x:hidden;border:inherit;box-sizing:content-box;background-color:#fff;border-bottom:solid #999 2px;border-top-left-radius:.5em;border-bottom-left-radius:.5em;font-size:.8em}tw-debugger .panel:empty,tw-debugger .panel[hidden]{display:none}tw-debugger.theme-dark .panel{background-color:#000;border-bottom-color:#666}tw-debugger .panel-source .panel-row-buttons{width:2rem}tw-debugger .panel-source .source-tags{width:20%;font-style:italic}tw-debugger .panel-row-source td{font-family:monospace;font-size:1rem;white-space:pre-wrap;overflow-wrap:anywhere;max-height:8rem;padding:1rem}tw-debugger .panel-rows{width:100%;overflow-x:scroll}tw-debugger .panel-rows>*{display:table-row}tw-debugger .panel-rows>div:nth-of-type(2n){background-color:#e6e6e6}tw-debugger .panel-tools .panel-rows>*,tw-debugger .panel-options .panel-rows>*{margin-top:.4rem;display:block}tw-debugger.theme-dark .panel-rows>div:nth-of-type(2n){background-color:#212121}tw-debugger .panel-row-buttons{text-align:right}tw-debugger .panel-variables .panel-rows:empty::before{content:"~ No variables ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-enchantments .panel-rows:empty::before{content:"~ No enchantments ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-errors .panel-rows:empty::before{content:"~ No errors... for now. ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-errors .panel-rows:empty+.panel-errors-bottom{display:none}tw-debugger.theme-dark .panel-variables .panel-rows:empty::before,tw-debugger.theme-dark .panel-enchantments .panel-rows:empty::before,tw-debugger.theme-dark .panel-errors .panel-rows:empty::before{color:#a8a8a8}tw-debugger .panel-rows:empty+.panel-variables-bottom{display:none}tw-debugger th[data-col]{text-decoration:underline;cursor:pointer}tw-debugger th[data-col][data-order=asc]::after{content:"↓"}tw-debugger th[data-col][data-order=desc]::after{content:"↑"}tw-debugger .panel-storylets:not(.panel-exclusive) .storylet-exclusive,tw-debugger .panel-storylets:not(.panel-urgent) .storylet-urgent{display:none}tw-debugger .storylet-exclusive,tw-debugger .storylet-urgent,tw-debugger .storylet-open{text-align:center}tw-debugger .panel-variables-bottom{padding-top:5px}tw-debugger .enchantment-row{min-height:1.5em}tw-debugger .variable-path{opacity:.4}tw-debugger .temporary-variable-scope,tw-debugger .enchantment-local{font-family:sans-serif;font-weight:normal;opacity:.8;font-size:.75em}tw-debugger .temporary-variable-scope:not(:empty)::before,tw-debugger .enchantment-local:not(:empty)::before{content:" in "}tw-debugger .variable-name,tw-debugger .enchantment-name{font-family:monospace;font-weight:bold}tw-debugger .variable-type{color:#575757;font-weight:normal;text-overflow:ellipsis;overflow:hidden;max-width:10em}tw-debugger.theme-dark .variable-type{color:#a8a8a8}tw-debugger .error-row{display:table-row;background-color:rgba(230,101,204,.3)}tw-debugger .error-row:nth-of-type(2n){background-color:rgba(237,145,219,.3)}tw-debugger .error-row>*{display:table-cell;padding:.25em .5em}tw-debugger .error-row .error-message[title]:not([title=""]){cursor:help}tw-debugger .error-row .error-passage{color:#575757}tw-debugger.theme-dark .error-row .error-passage{color:#a8a8a8}tw-debugger .storylet-row{background-color:rgba(193,240,225,.3)}tw-debugger .storylet-row:nth-child(2n){background-color:rgba(152,231,204,.3)}tw-debugger .storylet-row.storylet-closed{font-style:italic;background-color:#fff}tw-debugger .storylet-row.storylet-closed:nth-child(2n){background-color:#e6e6e6}tw-debugger .storylet-row.storylet-closed>:not(.storylet-lambda){opacity:.6}.storylet-error tw-debugger .storylet-row{background-color:rgba(230,101,204,.3)}.storylet-error tw-debugger .storylet-row:nth-child(2n){background-color:rgba(237,145,219,.3)}tw-debugger .storylet-row .storylet-name,tw-debugger .storylet-row .storylet-value{display:inline-block;width:50%}tw-debugger .storylet-row .storylet-lambda{font-family:monospace;font-size:1rem;white-space:pre-wrap;overflow-wrap:anywhere}tw-debugger.theme-dark .storylet-row.storylet-closed{background-color:#000}tw-debugger.theme-dark .storylet-row.storylet-closed:nth-child(2n){background-color:#212121}tw-debugger .tabs{padding-bottom:.5em}tw-debugger .tab{border-radius:0px 0px .5em .5em;border-top:none;top:-2px}tw-debugger .resizer-h{position:absolute;height:14em;border-left:2px solid #999;border-right:2px solid #999;top:10px;left:4px;width:8px;cursor:ew-resize}tw-debugger.theme-dark .resizer-h{border-color:rgba(0,0,0,0) #666}tw-debugger .resizer-v{position:absolute;height:8px;border-top:2px solid #999;border-bottom:2px solid #999;margin-bottom:4px;top:4px;left:10px;width:95%;cursor:ns-resize;box-sizing:border-box}tw-debugger.theme-dark .resizer-v{border-color:#666 rgba(0,0,0,0)}tw-debugger mark{color:inherit;background-color:rgba(101,230,230,.3) !important}tw-dialog{z-index:999997;border:#fff solid 2px;padding:2em;color:#fff;background-color:#000;display:block}@media(min-width: 576px){tw-dialog{max-width:50vw}}tw-dialog input[type=text]{font-size:inherit;width:100%;border:solid #fff !important}tw-dialog-links{text-align:right;display:-ms-flexbox;display:flex;-ms-flex-pack:end;justify-content:flex-end}tw-backdrop{z-index:999996;position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,.8);display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}tw-backdrop~tw-backdrop{display:none}tw-link,.enchantment-link{cursor:pointer;color:#4169e1;font-weight:bold;text-decoration:none;transition:color .2s ease-in-out}tw-passage [style^=color] tw-link:not(:hover),tw-passage [style*=" color"] tw-link:not(:hover),tw-passage [style^=color][hover=true] tw-link:hover,tw-passage [style*=" color"][hover=true] tw-link:hover,tw-passage [style^=color] .enchantment-link:not(:hover),tw-passage [style*=" color"] .enchantment-link:not(:hover),tw-passage [style^=color][hover=true] .enchantment-link:hover,tw-passage [style*=" color"][hover=true] .enchantment-link:hover{color:inherit}tw-link:hover,.enchantment-link:hover{color:#00bfff}tw-link:active,.enchantment-link:active{color:#dd4b39}.visited{color:#6941e1}tw-passage [style^=color] .visited:not(:hover),tw-passage [style*=" color"] .visited:not(:hover),tw-passage [style^=color][hover=true] .visited:hover,tw-passage [style*=" color"][hover=true] .visited:hover{color:inherit}.visited:hover{color:#e3e}tw-broken-link{color:#933;border-bottom:2px solid #933;cursor:not-allowed}tw-passage [style^=color] tw-broken-link:not(:hover),tw-passage [style*=" color"] tw-broken-link:not(:hover),tw-passage [style^=color][hover=true] tw-broken-link:hover,tw-passage [style*=" color"][hover=true] tw-broken-link:hover{color:inherit}tw-link.enchantment-mouseover,.link.enchantment-mouseover,tw-expression.enchantment-mouseover>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border-bottom:2px dashed #999}tw-link.enchantment-mouseover:hover,tw-link.enchantment-mouseover:active,.link.enchantment-mouseover:hover,.link.enchantment-mouseover:active,tw-expression.enchantment-mouseover>tw-link:hover,tw-expression.enchantment-mouseover>tw-link:active{color:inherit}tw-link.enchantment-mouseover.enchantment-button,.link.enchantment-mouseover.enchantment-button,tw-expression.enchantment-mouseover>tw-link.enchantment-button{border-style:dashed}tw-link.enchantment-mouseout,.link.enchantment-mouseout,tw-expression.enchantment-mouseout>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border:rgba(64,149,191,.6) 1px solid;border-radius:.2em}tw-link.enchantment-mouseout:hover,tw-link.enchantment-mouseout:active,.link.enchantment-mouseout:hover,.link.enchantment-mouseout:active,tw-expression.enchantment-mouseout>tw-link:hover,tw-expression.enchantment-mouseout>tw-link:active{color:inherit}tw-link.enchantment-mouseout:hover,.link.enchantment-mouseout:hover,tw-expression.enchantment-mouseout>tw-link:hover{background-color:rgba(175,197,207,.75);border:rgba(0,0,0,0) 1px solid}tw-link.enchantment-dblclick,.link.enchantment-dblclick,tw-expression.enchantment-dblclick>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;cursor:pointer;border:2px solid #999;border-radius:0}tw-link.enchantment-dblclick:hover,tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:hover,.link.enchantment-dblclick:active,tw-expression.enchantment-dblclick>tw-link:hover,tw-expression.enchantment-dblclick>tw-link:active{color:inherit}tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:active,tw-expression.enchantment-dblclick>tw-link:active{background-color:#999}tw-link.enchantment-button,.link.enchantment-button,.enchantment-button:not(.link) tw-link,.enchantment-button:not(.link) .link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}.enchantment-button{display:block}.enchantment-clickblock{cursor:pointer;width:100%;height:100%;display:block}.enchantment-clickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;color:rgba(65,105,225,.5);transition:color .2s ease-in-out}.enchantment-clickblock>:not(tw-enchantment):hover::after{color:rgba(0,191,255,.5)}.enchantment-clickblock>:not(tw-enchantment):active::after{color:rgba(222,78,59,.5)}.enchantment-clickblock>:not(tw-enchantment)::after{box-shadow:inset 0 0 0 .5vmax}.enchantment-clickblock>tw-passage::after,.enchantment-clickblock>tw-sidebar::after{box-shadow:0 0 0 .5vmax}.enchantment-mouseoverblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:2px dashed #999}.enchantment-mouseoutblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:rgba(64,149,191,.6) 2px solid}.enchantment-mouseoutblock:hover>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;background-color:rgba(175,197,207,.75);border:rgba(0,0,0,0) 2px solid;border-radius:.2em}.enchantment-dblclickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;cursor:pointer;border:2px solid #999}tw-dialog-links{padding-top:1.5em}tw-dialog-links tw-link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block;display:inline-block}html{margin:0;height:100%;overflow-x:hidden}*,:before,:after{position:relative;box-sizing:inherit}body{margin:0;height:100%}tw-storydata{display:none}tw-story{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;font:100% Georgia,serif;box-sizing:border-box;width:100%;min-height:100%;font-size:1.5em;line-height:1.5em;padding:5% 5%;overflow:hidden;background-color:#000;color:#fff}tw-story [style*=content-box] *{box-sizing:border-box}@media(min-width: 576px){tw-story{padding:5% 20%}}tw-story tw-consecutive-br{display:block;height:1.6ex;visibility:hidden}tw-story select{background-color:rgba(0,0,0,0);font:inherit;border-style:solid;padding:2px}tw-story select:not([disabled]){color:inherit}tw-story textarea{resize:none;background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none;padding:2px}tw-story input[type=text]{background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none}tw-story input[type=checkbox]{transform:scale(1.5);margin:0 .5em .5em .5em;vertical-align:middle}tw-story tw-noscript{animation:appear .8s}tw-passage{display:block}tw-sidebar{text-align:center;display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between}@media(min-width: 576px){tw-sidebar{left:-5em;width:3em;position:absolute;-ms-flex-direction:column;flex-direction:column}tw-enchantment[style*=width]>tw-sidebar{width:inherit}}tw-icon{display:inline-block;margin:.5em 0;font-size:66px;font-family:"Verdana",sans-serif}tw-icon[alt]{opacity:.2;cursor:pointer}tw-icon[alt]:hover{opacity:.4}tw-icon[data-label]::after{font-weight:bold;content:attr(data-label);font-size:20px;bottom:-20px;left:-50%;white-space:nowrap}tw-meter{display:block}tw-hook:empty,tw-expression:empty{display:none}tw-error{display:inline-block;border-radius:.2em;padding:.2em;font-size:1rem;cursor:help;white-space:pre-wrap}tw-error.error{background-color:rgba(223,58,190,.6);color:#fff}tw-error.warning{background-color:rgba(223,140,58,.6);color:#fff;display:none}.debug-mode tw-error.warning{display:inline}tw-error-explanation{display:block;font-size:.8rem;line-height:1rem}tw-open-button,tw-folddown{cursor:pointer;line-height:0em;border-radius:4px;border:1px solid rgba(255,255,255,.5);font-size:.8rem;margin:0 .2rem;padding:3px;white-space:pre}tw-folddown::after{content:"▶"}tw-folddown.open::after{content:"▼"}tw-open-button[replay]{display:none}tw-error tw-open-button,tw-eval-replay tw-open-button{display:inline !important}tw-open-button::after{content:attr(label)}tw-notifier{border-radius:.2em;padding:.2em;font-size:1rem;background-color:rgba(223,182,58,.4);display:none}.debug-mode tw-notifier{display:inline}tw-notifier::before{content:attr(message)}tw-colour{border:1px solid #000;display:inline-block;width:1em;height:1em}tw-enchantment:empty{display:none}h1{font-size:3em}h2{font-size:2.25em}h3{font-size:1.75em}h1,h2,h3,h4,h5,h6{line-height:1em;margin:.3em 0 .6em 0}pre{font-size:1rem;line-height:initial}small{font-size:70%}big{font-size:120%}mark{color:rgba(0,0,0,.6);background-color:#ff9}ins{color:rgba(0,0,0,.6);background-color:rgba(255,242,204,.5);border-radius:.5em;box-shadow:0em 0em .2em #ffe699;text-decoration:none}center{text-align:center;margin:0 auto;width:60%}blink{text-decoration:none;animation:fade-in-out 1s steps(1, end) infinite alternate}tw-align{display:block}tw-columns{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between}.transition-in{animation:appear 0ms step-start}.transition-out{animation:appear 0ms step-end}[data-t8n^=dissolve].transition-in,[data-t8n=fade].transition-in{animation:appear .8s}[data-t8n^=dissolve].transition-out,[data-t8n=fade].transition-out{animation:appear .8s reverse}[data-t8n^=shudder].transition-in{display:inline-block !important;animation:shudder-in .8s}[data-t8n^=shudder].transition-out{display:inline-block !important;animation:shudder-in .8s reverse}[data-t8n^=rumble].transition-in{display:inline-block !important;animation:rumble-in .8s}[data-t8n^=rumble].transition-out{display:inline-block !important;animation:rumble-in .8s reverse}[data-t8n^=pulse].transition-in{animation:pulse .8s;display:inline-block !important}[data-t8n^=pulse].transition-out{animation:pulse .8s reverse;display:inline-block !important}[data-t8n^=zoom].transition-in{animation:zoom-in .8s;display:inline-block !important}[data-t8n^=zoom].transition-out{animation:zoom-in .8s reverse;display:inline-block !important}[data-t8n^=blur].transition-in{animation:blur .8s;display:inline-block !important}[data-t8n^=blur].transition-out{animation:blur .8s reverse;display:inline-block !important}[data-t8n^=slideleft].transition-in{animation:slide-left .8s;display:inline-block !important}[data-t8n^=slideleft].transition-out{animation:slide-right .8s reverse;display:inline-block !important}[data-t8n^=slideright].transition-in{animation:slide-right .8s;display:inline-block !important}[data-t8n^=slideright].transition-out{animation:slide-left .8s reverse;display:inline-block !important}[data-t8n^=slideup].transition-in{animation:slide-up .8s;display:inline-block !important}[data-t8n^=slideup].transition-out{animation:slide-down .8s reverse;display:inline-block !important}[data-t8n^=slidedown].transition-in{animation:slide-down .8s;display:inline-block !important}[data-t8n^=slidedown].transition-out{animation:slide-up .8s reverse;display:inline-block !important}[data-t8n^=fadeleft].transition-in{animation:fade-left .8s;display:inline-block !important}[data-t8n^=fadeleft].transition-out{animation:fade-right .8s reverse;display:inline-block !important}[data-t8n^=faderight].transition-in{animation:fade-right .8s;display:inline-block !important}[data-t8n^=faderight].transition-out{animation:fade-left .8s reverse;display:inline-block !important}[data-t8n^=fadeup].transition-in{animation:fade-up .8s;display:inline-block !important}[data-t8n^=fadeup].transition-out{animation:fade-down .8s reverse;display:inline-block !important}[data-t8n^=fadedown].transition-in{animation:fade-down .8s;display:inline-block !important}[data-t8n^=fadedown].transition-out{animation:fade-up .8s reverse;display:inline-block !important}[data-t8n^=flicker].transition-in{animation:flicker .8s}[data-t8n^=flicker].transition-out{animation:flicker .8s reverse}
 </style>
 </head>
 <body>
-<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Hinkley_WhyBeGood?.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Hinkley_WhyBeGood?" startnode="25" creator="Twine" creator-version="2.7.1" format="Harlowe" format-version="3.3.7" ifid="B5E17092-DD1A-48BC-A130-A117C7EA156A" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="footer" color="orange"></tw-tag><tw-tag name="donotshowinventory" color="green"></tw-tag><tw-tag name="donotshowstore" color="blue"></tw-tag><tw-tag name="donotshowshop" color="blue"></tw-tag><tw-passagedata pid="1" name="The Start" tags="" position="700,300" size="100,100">Welcome to the world of Esteron, a place where you can be anyone and do anything. Now tell me what kind of person do you wish to be?
-
-
-[[I wanna be a good guy and become a hero amoungst the people-&gt;Good Guy]]
-
-[[ I wish to give into the darkness and make the kindgom hail under the heel of my rule!!-&gt;Bad Guy]]</tw-passagedata><tw-passagedata pid="2" name="Rading Village" tags="" position="1250,750" size="100,100">
-(if: (either: 0, 1, 2) is 0)[  
-
-Your army betrays you!
-
-  [[Betrayal!-&gt;Continue]]]
-  
-  (else-if: (either: 0,1,2) is 2)
-  [Well Done! your getting pretty good at this, your starting to fill the role of bad guy rather nicely. Now tell me are you satisfied with just pillaging or killing? Or do you wish to get even higher to finally claim something that you could call your own . What Do you say?
-  
- [[What did you have in mind?-&gt;Proposition]]
- 
- [[Im actually pretty content here, there isn&#39;t much more that I desire-&gt;Altered Vers]]]
-  
-  (else:)[The raid was a sucess! 
-  (set: $drop to (random: 100,1000)) 
-
-(set: $coins to $coins + $drop) 
-
-Screams and the warmth of fire filled the air as you and your army kill and pillage to your hearts content. Taking everything that you could carry and laoding it all on to wagons before finishing off the surviors and moving on to the next village. You have pillaged $drop coins from the now smoldering village. You now have $coins coins.  
-
-[[Move on to the next village|Rading Village]] 
-
-[[Go back to being good and boring|The Start]]]
-</tw-passagedata><tw-passagedata pid="3" name="The Start" tags="" position="700,200" size="100,100">Welcome to the world of Esteron, a place where you can be anyone and do anything. Now tell me what kind of person do you wish to be?
-
-
-[[I wanna be a good guy and become a hero amoungst the people-&gt;Good Guy]]
-
-[[ I wish to give into the darkness and make the kindgom hail under the heel of my rule!!-&gt;Bad Guy]]</tw-passagedata><tw-passagedata pid="4" name="The Start" tags="" position="600,300" size="100,100">Welcome to the world of Esteron, a place where you can be anyone and do anything. Now tell me what kind of person do you wish to be?
-
-
-[[I wanna be a good guy and become a hero amoungst the people-&gt;Good Guy]]
-
-[[ I wish to give into the darkness and make the kindgom hail under the heel of my rule!!-&gt;Bad Guy]]</tw-passagedata><tw-passagedata pid="5" name="Altered Vers" tags="" position="1075,1100" size="100,100">  (text-style:&quot;italic&quot;)[Aww come on now, were just starting to get to the good stuff, their is so much more than what is right in front of you. At least hear me out, I promise that it is something that is truly going to be worth your while.]
-
-[[Fine you got me, what is it that you have in mind-&gt;Next Big Thing]]</tw-passagedata><tw-passagedata pid="6" name="Answer" tags="" position="1125,1425" size="100,100">The only way you know how, steal and kill until you have enough money to obtaine the supplies that you need, or steall them yourself, eith way works for me honestly.
-
-[[Continue-&gt;Next Big Thing]] 
-
-[[Where would I ever get supplies and men like that?-&gt;Answer2]]</tw-passagedata><tw-passagedata pid="7" name="Answer2" tags="" position="1375,1425" size="100,100"> But if you feel like putting that moutian of gold to good use, there are rumors of a merchant that has access to anything that one could desire, but be mindful. His prices aren&#39;t cheap.
-
-[[Continue-&gt;Next Big Thing]]</tw-passagedata><tw-passagedata pid="8" name="Bad Guy" tags="" position="1225,300" size="100,100">(text-style:&quot;italic&quot;)[YES! Finally someone who is interesting and feels like doing something interesting, what is it gonna be first. Raise an army, burn a village, kill a king? There are so many endless possibilities and I am here to support you through all these glorious endeavors.]
-
-
-[[I shall rob the homes of the towns people and steal any valuables and coins that I can find-&gt;Doing Stuff2]]</tw-passagedata><tw-passagedata pid="9" name="Begin Sidequest" tags="" position="1100,1675" size="100,100">With information in hand you punder how to go about looking for this myersious merchant?
-
-[[I&#39;m going to ask around some of the bar and gambling dens around town and see if anyone knows anything about them-&gt;Expo1]]
-
-[[I dont need anyones help, Ill find this person myself-&gt;Expo2]]</tw-passagedata><tw-passagedata pid="10" name="Continue" tags="" position="1075,825" size="100,100">Before the planned surprise attack on the village next door, you felt cold steel move through your back and come out the front of you. Looking down you see a sword sticking out of your stomach. Before you could react, it is quickly pulled out, causing you to stumble and fall to the gorund. The last thing that you could see before everything went dark, was one of your hired mercanaires walking off with a bag of gold in one hand and a bloody sword in the other. 
-
-
-[[Return-&gt;The Start]]</tw-passagedata><tw-passagedata pid="11" name="Continue2" tags="" position="1475,800" size="100,100">Screams and the warmth of fire filled the air as you and your army kill and pillage to your hearts content. Taking everything that you could carry and laoding it all on to wagons before finishing off the surviors and moving on to the next village. You have pillaged $drop coins from the now smoldering village. You now have $coins coins.  
-
-[[Move on to the next village|Rading Village]] 
-
-[[Go back to being good and boring|The Start]]
-
-(display:&quot;Opener&quot;)
-</tw-passagedata><tw-passagedata pid="12" name="Doing Stuff" tags="" position="275,450" size="100,100">
-(if: (either: 0, 1, 2) is 0)[  
-
-  There are no jobs for you to work! 
-  [[Continue|Doing Stuff]]]
-  
-  
-  (else:)[ You managed to find some work in town. 
-  (set: $drop to (random: 3,10)) 
-
-(set: $coins to $coins + $drop) 
-
-(set: $Gkarma to $Gkarma +1)
-(set: $Bkarma to $Bkarma -1)
-
-You collect $drop coins from doing various jobs around the village! You have coins and your fame grows. You have a good karma of $Gkarma and a bad karma of $Bkarma.
-
-
-[[Continue|Doing Stuff]] 
-
-[[Stats-&gt;Stats]]
-
-[[Wander around town-&gt;Random Encounter]]]
-
-(if: $Gkarma &gt;= 5)[
-[[Find something else to do-&gt;Other Thing]]]</tw-passagedata><tw-passagedata pid="13" name="Doing Stuff2" tags="" position="1225,425" size="100,100">(if: (either: 0, 1, 2) is 0)[  
-
-  There were too many guards out on patrol to make a move.
-  
-  [[Continue|Doing Stuff2]]]
-  
- 
-  
-  
-  (else:)[You manged to find your way in through an unlocked window of someones home. 
-  (set: $drop to (random: 1,100)) 
-
-(set: $coins to $coins + $drop) 
-
-(set: $Gkarma to $Gkarma -1)
-(set: $Bkarma to $Bkarma +1)
-
-You collect $drop coins form stealing coin and taking everything that isn&#39;t nailed down! You have $coins coins and your infamy begins to spread. Your karma is $Gkarma for good and $Bkarma for bad.
-
-[[Continue|Doing Stuff2]] ]
-
-(if: $Bkarma &gt;= 5)[
-[[Find something else to do aside from petty grunt work-&gt;Other Thing2]]]
-
-</tw-passagedata><tw-passagedata pid="14" name="EXposition" tags="" position="325,725" size="100,100">You decide that you will go out into the forest and defend the village from monsters. You think to yourself that maybe just maybe they will finally recognize you and all the good that you are trying to doing. They have to, because if they don’t, you will use the coins you earned to buy supplies to go out and prove yourself.
-
-[[Continue-&gt;Killing Monsters]]</tw-passagedata><tw-passagedata pid="15" name="Good Guy" tags="" position="300,300" size="100,100">(text-style:&quot;italic&quot;)[Sigh....another one of you huh, never a short supply of you goodie goodies. Now tell me what boring and nauseatingly good thing would you like to do, help the poor, serve the church, build an orfanage mabey. Tell me what bordum you plan to subject me to.]
-
-[[I wanna do odd jobs for the town and help to gain favor with the towns people.-&gt;Doing Stuff]]</tw-passagedata><tw-passagedata pid="16" name="Killing Monsters" tags="" position="150,700" size="100,100">(if: (either: 0, 1) is 0)[  
-
-  The monster bites you! 
-
-  (set: $hp to $hp - (either: 1,2,3))  
-
-  (if: $hp &lt; 1)[ You are [[dead]]! ]  
-
-  (else:)[ Your health is $hp. 
-
-    [[fight-&gt;Killing Monsters]] 
-
-    [[flee]] ]  
-
-]
-
-(else:)[ You hit the monster!  
-
-  (set:$monster_hp to $monster_hp - 1)  
-
-  (if: $monster_hp &lt; 1)[ The [[monster is dead]]! ]  
-
-  (else:)[    
-
-    Its health is $monster_hp.
-
-    [[fight-&gt;Killing Monsters]] 
-    
-     [[take a break-&gt;Rest]] 
-
-    [[flee]] ]  
-
-]</tw-passagedata><tw-passagedata pid="17" name="Next Big Thing" tags="" position="1250,1175" size="100,100">  (text-style:&quot;italic&quot;)[Yes, it is time that you take on the king and his castle, making it your own. Break down their walls with fire and destruction. Bring it all down to the gorund and rebuild it in your own image, bring the people here under your rule and in time that will too become a mere stepping stone along the way to true greatness.]
-
-[[But how am I going to manage that?-&gt;Answer]]
-
-[[Where would I ever get supplies and men like that?-&gt;Answer2]]
-
-[[I guess I better get to work then-&gt;What to do?]]</tw-passagedata><tw-passagedata pid="18" name="Opener" tags="" position="1250,950" size="100,100">
-(text-style:&quot;italic&quot;)
-[Hey! your starting to get pretty good at this, but are you really sastified with just pilliaging and killing small time villagers. I think that it&#39;s to time to aim higher, to knock down the walls of that so called &quot;King&quot; and take the throne for yourself. What do you say?]
-
-[[I&#39;m pretty content with this way of life-&gt;Altered Vers]] 
-
-[[What did you have in mind?-&gt;Proposition]]</tw-passagedata><tw-passagedata pid="19" name="Other Thing" tags="" position="250,575" size="100,100">A few months pass working in the town and the people have come to known you quite well, mostly as a reliable errand boy. See what I mean, all that time spent doing all that work and for what, just to be unappreciated and used by people that just need something from you. Doens&#39;t that make you angry, want to seek revenge on those that clearly don&#39;t respect you. Why keep doing this, if there is no happy ending.
-
-(if: $Bkarma &gt;= 7 )
-[[Maybe your right, these people don&#39;t respect me and it’s time for some pay back!-&gt;Bad Guy]]
-
-[[No, this is the way, I just have to keep trying and the people will acknowledge me and my hard work eventually!-&gt;EXposition]]</tw-passagedata><tw-passagedata pid="20" name="Other Thing2" tags="" position="1225,575" size="100,100">You mange to get enough money to hire a few mercenaries to do your bidding. A few months later you manage to assemble what you would consider to be a small army. Rallying your forces, you decide to raid the next village over and burn it to the ground.
-
-[[continue-&gt;Rading Village]]</tw-passagedata><tw-passagedata pid="21" name="Proposition" tags="" position="1450,1075" size="100,100">  (text-style:&quot;italic&quot;)[Now that&#39;s what I&#39;m talking about, I think it is time that you took your army and started to aim higher up the ladder. Enough with these pesents and their meger possesions, I think it is time that you aimed for the big leagues.]
-
-[[You don&#39;t mean...-&gt;Next Big Thing]]</tw-passagedata><tw-passagedata pid="22" name="Rest" tags="" position="300,975" size="100,100">(set: $hp to 10)
-
-You take a brief moment of respite, the pain of your wounds slowly ebbing away as your strength slowly returns to you.
-
-(display: &quot;EXposition&quot;)</tw-passagedata><tw-passagedata pid="23" name="The Start" tags="" position="600,200" size="100,100">Welcome to the world of Esteron, a place where you can be anyone and do anything. Now tell me what kind of person do you wish to be?
-
-
-[[I wanna be a good guy and become a hero amoungst the people-&gt;Good Guy]]
-
-[[ I wish to give into the darkness and make the kindgom hail under the heel of my rule!!-&gt;Bad Guy]]</tw-passagedata><tw-passagedata pid="24" name="Thing" tags="" position="450,850" size="100,100">
-  (text-style:&quot;italic&quot;)[Really? This is what you want to do, endlessly slave away killing pests that no one is going to ever thank you for. Do you know how many hundreds, if not thousands of adventures have gone down this exact same path as you and yet you presist.]</tw-passagedata><tw-passagedata pid="25" name="Init" tags="" position="500,0" size="100,100">{
-(set: $hp to 10)
-(set:$monster_hp to 4)
-(set:$Gkarma to 0)
-(set:$Bkarma to 0)
-(set: $knowpass to false)
-(set: $item1 to false)
-(set: $item2 to false)
-(set: $item3 to false)
-(set: $item4 to false)
-(set: $inv to (a:))
-(set: $shopinv to (a:))
-(set: $shopinv to $shopinv + (a: &quot;Sword&quot;, &quot;Shield&quot;, &quot;Potion&quot;))
-(set: $karma to 0)
-(set: $karmastatus to &quot;Good&quot;)
-(set: $coins to 5)
-(set: $swordcost to 5)
-(set: $shieldcost to 5)
-(set: $potioncost to 5)
+<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Why Be Good Expanded 2.0.</tw-noscript></noscript></tw-story>
+<tw-storydata name="Why Be Good Expanded 2.0" startnode="80" creator="Twine" creator-version="2.7.1" format="Harlowe" format-version="3.3.7" ifid="29622C6D-AE98-46F2-B15E-11B9E32D685D" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="footer" color="orange"></tw-tag><tw-passagedata pid="1" name="Disclaimer" tags="donotshowinventory" position="700,150" size="100,100">{&lt;audio src=&quot;https://static.wixstatic.com/mp3/614230_32951e17c57747a6a56f7e4c0b04d23c.mp3&quot; autoplay loop&gt;
 }
-(display: &quot;The Start&quot;)</tw-passagedata><tw-passagedata pid="26" name="What to do?" tags="" position="1250,1550" size="100,100">You ponder where the merchant could be lerking, while you set out to find and possible informtion about them.
 
-[[Seek out the merchant-&gt;Begin Sidequest]]
+Disclaimer: this twine contains unparalleled amounts of AWSOME and COOL THINGS. As a result this twine may be a very large to show everything that we have in store.(all and all don&#39;t hate us to much Mabel.)
+
+[[Continue-&gt;The Start]]</tw-passagedata><tw-passagedata pid="2" name="The Start" tags="donotshowinventory" position="700,300" size="100,100">{&lt;audio src=&quot;https://static.wixstatic.com/mp3/614230_32951e17c57747a6a56f7e4c0b04d23c.mp3&quot; autoplay loop&gt;
+}
+
+Welcome to the world of Esteron, a place where anyone can be who they want and do what they want. Now tell me young prospect, what kind of person would you like to be within this world.
+
+[[I wanna be a good guy and become a hero amoungst the people-&gt;Good Guy Start]]
+
+[[ I wish to give into the darkness and make the kindgom hail under the heel of my rule!!-&gt;Bad Guy Start]]</tw-passagedata><tw-passagedata pid="3" name="Good Guy Start" tags="" position="500,400" size="100,100">{&lt;audio src=&quot;https://static.wixstatic.com/mp3/614230_25bad2f5122a4bb597cf9367a175b705.mp3&quot; autoplay loop&gt;
+}
+(text-style:&quot;italic&quot;)[.....Sigh....here we go again. There always seems to be an endless supply of goodie goodies like you. So tell me what worthless things do you plan on subjecting me to, helping the poor, maybe serve the church and do the work of &quot;god&quot;. Though I doubt they are going to be communing with someone like you. Mabey you&#39;ll be origonal and build an orphanage, please tell me what bordem you are going to be dragging me into.]
+
+[[I wanna do odd jobs around the town and try to gain favor with the towns people-&gt;venture forth]]</tw-passagedata><tw-passagedata pid="4" name="Bad Guy Start" tags="" position="900,400" size="100,100">{&lt;audio src=&quot;https://static.wixstatic.com/mp3/614230_b124412235a3459d9b68121ff44d8bf6.mp3&quot; autoplay loop&gt;
+}
+(text-style:&quot;italic&quot;)[YES! Finally someone who is interesting and feels like doing something interesting, what is it gonna be first. Raise an army, burn a village, kill a king? There are so many endless possibilities and I am here to support you through all these glorious endeavors.]
 
 
-</tw-passagedata><tw-passagedata pid="27" name="dead" tags="" position="50,850" size="100,100">With the last bit of life leaving your body, you look back upon everything that has happened up to this point and wounder if it was really worth it. That maybe if you had just listened you wouldn’t be bleeding out on the ground right now. These are the last thoughts that pass through your mind, as the world finally goes dark.
+[[I shall rob the homes of the towns people and steal any valuables and coins that I can find-&gt;Doing Stuff2]]</tw-passagedata><tw-passagedata pid="5" name="venture forth" tags="" position="300,500" size="100,100">{&lt;audio src=&quot;https://static.wixstatic.com/mp3/614230_25bad2f5122a4bb597cf9367a175b705.mp3&quot; autoplay loop&gt;
+}
+ //Code that allows the player to roll if they find a job or not and then gives out a radom range of gold and increases the good karma of the player. Not sure if you want to use the code that I have for this or not.//
+ 
+ (text-style:&quot;italic&quot;)[ We&#39;re being real original this time around aren&#39;t we, really trying to break the glass celling on this one. Go on, don&#39;t let me stop you from boring yourself to death.]
+ 
+ [[Go find some work-&gt;Doing Stuff]]
+ 
+ [[Head over to the shop-&gt;Shop]]
+ 
+ [[Wander around town-&gt; Random Encounter]]</tw-passagedata><tw-passagedata pid="6" name="Doing Stuff" tags="" position="300,700" size="100,100">{&lt;audio src=&quot;https://static.wixstatic.com/mp3/614230_25bad2f5122a4bb597cf9367a175b705.mp3&quot; autoplay loop&gt;
+}
+//code that determines if the player finds work or not and is reward a random range of coins if they do. also awarding the player good karma//</tw-passagedata><tw-passagedata pid="7" name=" Random Encounter" tags="" position="500,550" size="100,100">{&lt;audio src=&quot;https://static.wixstatic.com/mp3/614230_25bad2f5122a4bb597cf9367a175b705.mp3&quot; autoplay loop&gt;
+}
+//code for random encouners, possibly to support two of them if able//
+
+//Potential encounter 1//
+
+While you were doing errands for one of the locals, you notice a large sack of gold in the middle of the road. On it is printed the name of the local bank that resied within the town. At this sight and all to familar voice crops up within your head.(text-style:&quot;italic&quot;)[ Now you could be the borining goodie goodie that you are so bent on becoming and return it....or you could do something fun and steal it. It would certianly be a big boost in your finaces. What do you say?]  
+
+[[No! I will return this to the bank like an sensible person would do-&gt;Good Route]]
+
+[[You do have a point, it is a bank. I doubt that they would miss it much-&gt;Bad Route]]
+
+//Potential encounter 2//
+You are wandering around town looking for some work when you&#39;ve stumbled across a begger sitting on the side of the rode leaning against a nearby building. Getting closer you notice a sign placed in front of him reading:Blind and starving , any donation helps.(text-style:&quot;italic&quot;)[This is perfect, our first potential victum. All you have to do is carefully reach into his cup and take the coins for yourself. Consider this to be your first chance to against the grain and embrace the evil you were always meant to. Let this be a strike against people that will never respect you.
+
+[[No!, this is not the way, I just have to keep working harder. They are bound to aperciate me one day...right?-&gt;Donate]]
+
+[[M-maybe your right, this is the only way-&gt;Steal]]</tw-passagedata><tw-passagedata pid="8" name="Shop" tags="" position="100,600" size="100,100">{&lt;audio src=&quot;https://static.wixstatic.com/mp3/614230_32951e17c57747a6a56f7e4c0b04d23c.mp3&quot; autoplay loop&gt;
+}
+(print: $shopinv)
+
+You have $coins coins.
+
+(if: $coins &gt;= $swordcost)[(click: &quot;Sword&quot;)[[Buy Sword?]]]
+
+(if: $sword is true)[You have the sword...]
+
+(if:$coins &gt;= $shieldcost)[(click: &quot;Shield&quot;)[[Buy Shield?]]]
+
+(if:$coins &gt;= $potioncost)[(click: &quot;Potion&quot;)[[Buy Potion?]]]
+
+(else:)[You do not have enough coins. You have $coins coins.]
 
 
-[[continue-&gt;The Start]]</tw-passagedata><tw-passagedata pid="28" name="flee" tags="" position="175,875" size="100,100">With your body broken and battered you drag yourself back to the village. Making it to just the outskirts before passing out from your wounds. You awake in the villages medical hut a few days later and refuse to talk about what happened with anyone. Slowly fading back into obscurity and never becoming the hero that you so desperately desired to be.
-
-
-[[Continue-&gt;The Start]]</tw-passagedata><tw-passagedata pid="29" name="monster is dead" tags="" position="325,850" size="100,100">(set: $drop to (random: 3,10)) 
-
-(set: $coins to $coins + $drop) 
-
-(set: $Gkarma to +2)
-(set: $Bkarma to -3)
-
-With one final swing of your sword, the monster drops dead. Panting haevily you take a few moments to catch your breath before pillaging the corpse for your bounty.
-
-You collect $drop  coins from the monsters carcass! You have $coins coins.
-
-(display:&quot;Thing&quot;)
-
-[[Continue|Killing Monsters]] 
-
-[[Go Home|flee]]
-
-(if: $Gkarma &gt;= 7)[
-[[I think that it is time to move on to something grander that can help even more people-&gt;Next To Do]]]</tw-passagedata><tw-passagedata pid="30" name="Good Route" tags="" position="375,600" size="100,100">
+</tw-passagedata><tw-passagedata pid="9" name="Good Route" tags="" position="400,900" size="100,100">{&lt;audio src=&quot;https://static.wixstatic.com/mp3/614230_25bad2f5122a4bb597cf9367a175b705.mp3&quot; autoplay loop&gt;
+}
 With a determined look and a little bit of effort, you manage to haul the heavy sack of gold onto your back and begin walking against town. It takes you most of the arfternoon but you manage to bring the back to the steps of the bank. Setting it down and catching your breath for a moment before brining it inside.
 
-[[Continue-&gt;Continue3]]
+[[Continue-&gt;Good Route2]]
+</tw-passagedata><tw-passagedata pid="10" name="Bad Route" tags="" position="700,800" size="100,100">//code that goves the player a random range of coins and increases the amount of bad karma the player has//
 
-</tw-passagedata><tw-passagedata pid="31" name="Continue3" tags="" position="525,600" size="100,100">(if: (either: 0, 1,) is 0)[  
+You look to the left, then to the right checking to see if their is anyone around. Seeing that the coast was clear, you pick it up with great effort. Weaving your way through alleyways and sidestreets until you make it back to your house.
 
-(set: $Gkarma to $Gkarma +3)
-(set: $Bkarma to $Bkarma +3)
+(text-style:&quot;italic&quot;)[Feels good doesn&#39;t it, to be able to take what is so rightfully due to you. Why stop here, when there is so much more that could be done.]
 
- You bring the bag to the clerk on the couner and explain the situation of what had happened. They looked shocked that something like that could have happened. They thank you for your civil service before they take the sack and walk away to place it in the vault. You  see that, they didn&#39;t even give you a reward all that sweat and time and what did they show you for it, nothing. How can you just stand there and be okay with not bing acknowladge for anything that you do? It must be frustrating, it must make you want to lash out and make them pay for what they have done.
+[[I...I can&#39;t do this anymore, this isn&#39;t right! this is not how a hero should act!-&gt;Turning Yourself In]]
+
+
+[[Your right, this does feel great, I should have done this a long time ago. Whats next?-&gt;Details]]</tw-passagedata><tw-passagedata pid="11" name="Good Route2" tags="" position="300,1100" size="100,100">{&lt;audio src=&quot;https://static.wixstatic.com/mp3/614230_25bad2f5122a4bb597cf9367a175b705.mp3&quot; autoplay loop&gt;
+}
+//code that determines if good or bad thing happens//
+
+//bad thing//
+You bring the bag to the clerk on the couner and explain the situation of what had happened. They looked shocked that something like that could have happened. They thank you for your civil service before they take the sack and walk away to place it in the vault.text-style:&quot;italic&quot;)[  You  see that, they didn&#39;t even give you a reward all that sweat and time and what did they show you for it, nothing. How can you just stand there and be okay with not bing acknowladge for anything that you do? It must be frustrating, it must make you want to lash out and make them pay for what they have done.]
  
  
   [[Im better than that, this is all apart of becoming a hero. They must be expected to work and do tasks without reward.|Doing Stuff]]
   
   
 [[Your right I think that it might be time for some payback-&gt;Details]]]
-  
-  
-  (else:)[ You bring the bag to the clerk on the couner and explain the situation of what had happened. They looked shocked that something like that could have happened. They thank you for your civil service before they take the sack and walk away to place it in the vault. Not before pausing for a moment and opening the bag, taking out a few coins and handing them to you with a wink before they continuing to walking away.
-  
-  (set: $drop to (random: 10,40)) 
 
-(set: $coins to $coins + $drop) 
+//good thing//
+You bring the bag to the clerk on the couner and explain the situation of what had happened. They looked shocked that something like that could have happened. They thank you for your civil service before they take the sack and walk away to place it in the vault. Not before pausing for a moment and opening the bag, taking out a few coins and handing them to you with a wink before they continuing to walking away.
 
-(set: $Gkarma to $Gkarma +3)
-(set: $Bkarma to $Bkarma -2)
 
-You collect $drop coins from your good deed!! You have coins and your fame grows. You have a good karma of $Gkarma and a bad karma of $Bkarma. You also have $coins coins.
+[[Keep working jobs-&gt;Doing Stuff]]]</tw-passagedata><tw-passagedata pid="12" name="Details" tags="" position="500,1100" size="100,100">{&lt;audio src=&quot;https://static.wixstatic.com/mp3/614230_b124412235a3459d9b68121ff44d8bf6.mp3&quot; autoplay loop&gt;
+}
+You decide to abandon this path and decieded that it as time to take revene on these people that have wronged you.
 
-[[Keep working jobs-&gt;Doing Stuff]]]
+//big increase in negative karma//
 
-</tw-passagedata><tw-passagedata pid="32" name="Random Encounter" tags="" position="450,400" size="100,100">(set:  _roll to (random: 1,20)+ $Gkarma)
-(if: _roll &gt;=14)[
-
-(display:&quot;Encounter Text&quot;)]
-
-(else:)[You don&#39;t find anything of particular intrest.
-
-[[Go back to working-&gt;Doing Stuff]]
-
-[[Wander around some more-&gt;Random Encounter]]] </tw-passagedata><tw-passagedata pid="33" name="Encounter Text" tags="" position="575,450" size="100,100">While you were doing errands for one of the locals, you notice a large sack of gold in the middle of the road. On it is printed the name of the local bank that resied within the town. Now you could be the borining goodie goodie that you are so bent on becoming and return it....or you could do something fun and steal it. It would certianly be a big boost in your finaces. What do you say  
-
-[[No! I will return this to the bank like an sensible person would do-&gt;Good Route]]
-
-[[You do have a point, it is a bank. I doubt that they would miss it much-&gt;Bad Route]]
-
-</tw-passagedata><tw-passagedata pid="34" name="Bad Route" tags="" position="700,575" size="100,100">(set:$Bkarma to +3)
-
- (set: $drop to (random: 150,300)) 
-
-(set: $coins to $coins + $drop) 
-
-You look to the left, then to the right checking to see if their is anyone around. Seeing that the coast was clear, you pick it up with great effort. Weaving your way through alleyways and sidestreets until you make it back to your house. The sack holding a staggering amount of $coins coins.
-
-Feels good doesn&#39;t it, to be able to take what is so rightfully due to you. Why stop here, when there is so much more that could be done.
-
-[[I...I can&#39;t do this anymore, this isn&#39;t right! this is not how a hero should act!-&gt;Turning Yourself In]]
-
-(if:$Bkarma = 3)[
-[[Your right, this does feel great, I should have done this a long time ago. Whats next?-&gt;Details]]]
-</tw-passagedata><tw-passagedata pid="35" name="Stats" tags="" position="150,1075" size="100,100">You have $coins coins. Your Good Karma is $Gkarma and your bad karma is $Bkarma.</tw-passagedata><tw-passagedata pid="36" name="Details" tags="" position="650,725" size="100,100">You decide to abandon this path and decieded that it as time to take revene on these people that have wronged you.
-
-(set: $Bkarma to +2)
-
-[[Continue-&gt;Doing Stuff2]] </tw-passagedata><tw-passagedata pid="37" name="Turning Yourself In" tags="" position="825,700" size="100,100">With a heavy heart and your deams shattered forever. You head to the colsest solider outpost and explained the criminal act that you had commited. They promply put you in chains in response and was swiftly put on trial for theft. You plead guilty without another though and take your sentence of spending the rest of your days locked up the in the dungeon beneath the castle the overlooks the village that you had once called home.
+[[Continue-&gt;Doing Stuff2]] </tw-passagedata><tw-passagedata pid="13" name="Doing Stuff2" tags="" position="1000,550" size="100,100"> //Code that allows the player to roll if they find a house to rob  or not and then gives out a radom range of gold and increases the bad karma of the player. Not sure if you want to use the code that I have for this or not.//
+ 
+ [[Find something else to do aside from petty grunt work-&gt;Other Thing2]]</tw-passagedata><tw-passagedata pid="14" name="Turning Yourself In" tags="" position="700,1100" size="100,100">{&lt;audio src=&quot;https://static.wixstatic.com/mp3/614230_b124412235a3459d9b68121ff44d8bf6.mp3&quot; autoplay loop&gt;
+}
+With a heavy heart and your deams shattered forever. You head to the colsest solider outpost and explained the criminal act that you had commited. They promply put you in chains in response and was swiftly put on trial for theft. You plead guilty without another though and take your sentence of spending the rest of your days locked up the in the dungeon beneath the castle the overlooks the village that you had once called home.
 
 (text-style:&quot;italic&quot;)[Guess you got cold feet at the very end. Too bad, you had a lot of potential and you were so close to scraching the surface of being able to achieve it. Well there are many others that will come and eventually one of them will walk the path of darkness.]
 
 GAME OVER!
 
-[[Return to Main Menu-&gt;The Start]] </tw-passagedata><tw-passagedata pid="38" name="Next To Do" tags="" position="450,1000" size="100,100">With your mind set and their little to do to sway it, you treck off further into the forest leaving the village that you had grown up in behind, ready to become the hero that you know thet you can be.
+[[Return to Main Menu-&gt;The Start]] </tw-passagedata><tw-passagedata pid="15" name="Donate" tags="" position="500,700" size="100,100">{&lt;audio src=&quot;https://static.wixstatic.com/mp3/614230_25bad2f5122a4bb597cf9367a175b705.mp3&quot; autoplay loop&gt;
+}
+//Increase good karma and remove 10 coins from player total//
 
-[[Continue-&gt;Expo3]]</tw-passagedata><tw-passagedata pid="39" name="Expo1" tags="" position="975,1800" size="100,100">You go aound to variouse diffferent bars in the more shady partd of the village. Many of witch are far removed from the ever present gaze of the guards of the king. You manage to hear whispers of a group of claoked figures that are frequently seen lurking within the many alleyways within this part of the village. Rumor has it that they are deciples of the person that you are looking for.
+You walk up to the begger, making your presence known as you forward and place a few coins into the container next to the sign.
+&quot;I hope this helps&quot;
+The begger looks in your general direction and gives you a small smile.
+&quot;May god smile upon you child&quot;
+(text-style:&quot;italic&quot;)[Trust me he won&#39;t]
+Continuing on past the begger your heart feels a bit lighter as you keep searching for any potential jobs.</tw-passagedata><tw-passagedata pid="16" name="Steal" tags="" position="700,600" size="100,100">{&lt;audio src=&quot;https://static.wixstatic.com/mp3/614230_b124412235a3459d9b68121ff44d8bf6.mp3&quot; autoplay loop&gt;
+}
+//increase bad karma and add 20 coins to the player total//
+You do your best to ensure that the blind begger doesn&#39;t notice your presence as you continue to move closer and closer. Arriving mere inches from the begger and the collection cup.Slowly reaching down and pulling out a handful of coins, before going on your way
+(text-style:&quot;italic&quot;)[See doesn&#39;t that feel good, now imagine what we could achieve. I promise that you would finally get the respect that you so rightly deserve.]
+
+[[I-I&#39;m listening-&gt;Continue]]
+
+[[This was a mistake, your nothing but a bad influence-&gt;Continue2]]</tw-passagedata><tw-passagedata pid="17" name="Continue" tags="" position="900,800" size="100,100">{&lt;audio src=&quot;https://static.wixstatic.com/mp3/614230_b124412235a3459d9b68121ff44d8bf6.mp3&quot; autoplay loop&gt;
+}
+//increase bad karma//
+
+(text-style:&quot;italic&quot;)[That&#39;s the spirit! Now the first thing that were going to need is money and lots of it. But given your currently lacking skill set, I say that you should start out small.....like robing everyone blind and taking everything that isn&#39;t nailed down. Once you have aquired enough gold, the next part of m-our plan will become aparent.]
+
+[[Time to go to work-&gt;Doing Stuff2]] </tw-passagedata><tw-passagedata pid="18" name="Continue2" tags="" position="1025,925" size="100,100">{&lt;audio src=&quot;https://static.wixstatic.com/mp3/614230_b124412235a3459d9b68121ff44d8bf6.mp3&quot; autoplay loop&gt;
+}
+(text-style:&quot;italic&quot;)[Aw come on kid, don&#39;t go getting cold feet on me already, we have just begun on the path to gretness. The only way to on from here is up...unless your gonna walk away? Go back on your merry way to being disrespected and treated like your invisible, only coming to you when something is needed. Trust me kid whatver your looking for, trying to be a hero, you won&#39;t find it. I&#39;ve seen so many try to do it, try to be the &quot;hero&quot;, you don&#39;t want to know what happened to them.]
+
+[[What happened to them?-&gt;further exposition]]
+
+[[Your right, I don&#39;t want to know. But that isn&#39;t going to stop me. It just means that I&#39;ll have to work twice as hard. -&gt;Next Part]]</tw-passagedata><tw-passagedata pid="19" name="further exposition" tags="" position="825,1075" size="100,100">{&lt;audio src=&quot;https://static.wixstatic.com/mp3/614230_b124412235a3459d9b68121ff44d8bf6.mp3&quot; autoplay loop&gt;
+}
+(text-style:&quot;italic&quot;)[You really wish to know? Fine then! You were not the first to walk thus path, many have come before you wanting to be the &quot;hero&quot;. Trying to better the world and gain the favor of the people here. They have all tried and each and every one of them died in this persuit. Stabbed through the heart by a goblin,run out of the capital by a mob, one was even arrested and executed by the king himself. All of them had tried and failed to do the same thing that you yourslef are trying to achieve and you will die just like the rest of them. Now your probably wondering why I know all of this, why this tiny voice in your head knows countless years of information that you don&#39;t. Well that&#39;s because I&#39;m not your conscience like you may have thought, lets just say I am something more like an observer of this world, akin to the god that so many of you pitiful souls call out to or curse. But I&#39;ve stopped listening, stopped caring......
+Though I have to admit you are a bit more special than the others, no one has been able to pull that out of me in such a long time. I think you deserve some kind of reward for that...a clean slate.]
+
+You feel a strange power surge through your body almost as if it is rapidly becoming not your own. You try to scream, to move but your body refuses to listen. Darkness begins to fill your vision as your strength continues to fade as the whole world becomes black.
+
+(text-style:&quot;italic&quot;)[Do us both a favor kid and forget that any of this ever happned, for both our sakes.]
+
+[[Try Again?-&gt;The Start]]</tw-passagedata><tw-passagedata pid="20" name="Next Part" tags="" position="1000,1100" size="100,100">{&lt;audio src=&quot;https://static.wixstatic.com/mp3/614230_32951e17c57747a6a56f7e4c0b04d23c.mp3&quot; autoplay loop&gt;
+}
+(text-style:&quot;italic&quot;)[Your funeral.]
+
+With the little bit of money you gathered, you wander through the stone walk ways of the village. The large castle casting it&#39;s ever present shadow over the streets. Weaving through the ever present buzzing of people as they go about their day, passing by just as many beggers bound in nothing more than rags. Mostly consisting of thoese that were old and sick, mostly soliders taht were once bright eyed young folk, like yourself. Only to be chewed up and spit out by the king&#39;s army and the seemingly endless amount of war they were apart of. The sight only serving to steal your resolve as you arrive at you destination. A plain looking store front with a medium sized painted sign in front of it by the door reading: Serenity&#39;s Anvil. Walking into the store you walk past the various wepons adorned on the walls, accompanied by stands of armor of various materials and types. Making your way past all of them to the front counter, where a medium sized portly clerk metting your gaze says.
+&quot;What are you buying?&quot;
+[[Shop-&gt;Shop]] 
+[[I guess I need to work a bit harder to get what I need-&gt;Doing Stuff]] 
+[[This is everything that I need-&gt;Off to kill stuff]]</tw-passagedata><tw-passagedata pid="21" name="Off to kill stuff" tags="" position="1150,1150" size="100,100">After purchasing you gear you turn to leave but not beofore the clerk breaks the silence.
+&quot;I recomend the forest, a lot more beasts but much easier to take down. Bound to make some decent coin that way.&quot;
+&quot;Mountains don&#39;t have as many but I&#39;ve heard that the beasts there are much more ferociouse. Not even the kings soliders have been able to take them down. But they say that many treasures may lay tucked away within that rocky tomb.&quot;
+&quot;Do with the information what you will, the cleark returning to their work. Your hand resting on the handle thinking of where to go to start your adventure.
+
+[[Forest-&gt;Forest]]
+
+[[Moutain-&gt;Mountains]]</tw-passagedata><tw-passagedata pid="22" name="Forest" tags="" position="1150,1275" size="100,100">Deciding that the forest would be the best place to start the spreading of your name. You take your equipment in hand and set out twards the main gates of the capital, the hustle and bustle of the common folk slowly fading and being replaced by the growing precense of the king&#39;s soliders as you draw closer to the towering gates of the capital that leads to the outside world. Walking past the many soliders, most of witch pay you no mind, thoese that do see you only give looks of pity or downright discust.As you make you way through the gates you are met with the sound of a pleading voice. Looking twards it you see a group of four guards surrounding an elderly looking merchant. Only managing to part of the confrontation as you pass by.
+&quot;Please, this is all the money that I have.&quot;
+&quot;No money for the toll, no passage.&quot;
+&quot;B-but the toll keeps going up, at this rate I won&#39;t even be able to bring home a profit.&quot;
+&quot;If you don&#39;t like it then sell your wares elsewhere, although I would never by damaged goods.&quot;
+One guard punches the merchant to the ground, while another pushes over his cart.
+
+[[Confront them-&gt;option set]]
+
+[[Keep walking to the forest-&gt;continue onward]]</tw-passagedata><tw-passagedata pid="23" name="Mountains" tags="" position="1500,1200" size="100,100">//combat script//
+
+The journy had taken you nearly two weeks of traveling north to even get a glimps of the small mountain range dotting across the horizion. Taking another few days to reach the base of one of the mounsterouse mass of stone. Where it is told that strong monsters and even greater treasures are said to be found within.
+
+[[Go searching for monsters-&gt;fighting]]
+
+[[Return to the capital-&gt;Bad thing]] </tw-passagedata><tw-passagedata pid="24" name="option set" tags="" position="1025,1400" size="100,100">You muster up what little courage you have and chnage course twards the guards. Thinking as you draw closer what your course of action should be.
+
+[[Offer to pay the toll-&gt;option1]]
+
+[[Fend them off-&gt;Option2]]
+
+[[Try to convince them to let the merchant pass-&gt;option3]]</tw-passagedata><tw-passagedata pid="25" name="continue onward" tags="" position="1275,1400" size="100,100">While you wish to be a hero, you find that that at present there is no way you could be any use to the old man. Even more so you wouldn&#39;t be much use to anyone if you were beaten to a bloody pulp by the guards. So you continue on your way towards the forest, the old merchants pained cries filling the air as you walk past.
+
+(text-style:&quot;italic&quot;)[What&#39;s wrong hero? This is your chance to be the hero that you so badly want to be, could it be that you scared? Ready to run away once you realized what kind of filth &quot;the peoples king&quot; and his soliders are. Well welcome to reality sunshine, where your inevitably going to die like the rest before you. So go on, run away to buy yourself a few more hours.]
+
+[[Keep moving-&gt;to the forest]]</tw-passagedata><tw-passagedata pid="26" name="to the forest" tags="" position="1300,1550" size="100,100">//combat script
+
+The journy had taken a few days to complete, the walls and numerous people of the capital disapereard over the horizion. Being replaced by feilds filled with crops and the small homes that made up the villages that were in charge of them. It was near sunset when you had arrived to the enternece to the forest, looming just as tall and imposing as the walls of the capital. Taking a single moment to compose yourself before steping inside, ready to start your journy to become stronger and to become a hero.
+
+[[Find monsters to slay-&gt;fighting2]]
+
+
+[[Move depper into the forest-&gt;sidequest start]]</tw-passagedata><tw-passagedata pid="27" name="option1" tags="" position="1025,1525" size="100,100">You close in twards the guards taking one last deep breath before speaking.
+&quot;How much?&quot;
+The guards stop at the question and turn to you. The one beating up the merchant stopping mid kick and walking over. Appearing ro have delicate engravings and an ornate looking helmet. That is all you can see before they are in your face.
+&quot;What did you say boy.&quot;
+You once agian ask how much
+&quot;500 coins, but I doubt a commoner such as yourself has that amount, so run along now before you get hurt.&quot;
+
+
+//only apears is the player has enough money//
+[[Pay them the money-&gt;good boy]]
+
+[[Screw this! Time for a fight-&gt;Option2]] </tw-passagedata><tw-passagedata pid="28" name="Option2" tags="" position="1150,1525" size="100,100">Drawing your wepon into a fighting stance. The guards take notice and draw their own wepons with such egerness, almost as if they had been itching for a fight.
+
+//can be actuall combat ot just a simple dice roll//
+
+//Sucess text//
+The last of the guards fall unconcious, sheathing your wepon and continuing on your way to the forest.
+
+//Fail text//
+The guards were too much for you, easily knocking the wepon otu of your hand after a few short moments. 
+
+[[COntinue-&gt;to the forest]]</tw-passagedata><tw-passagedata pid="29" name="option3" tags="" position="900,1525" size="100,100">//dice check to determine if the player succedes or fails//
+
+You aprach the group of guards in an attempt to convince them to leave the merchant alone.
+
+//Success//
+//Increases good karma//
+You manage to convince the guards that the merchant isn&#39;t worth their time and would ultimately leave them with less money to collect if they drove the merchant away. Begrugingly the guards tke your words to heart and begin to walk away from the merchant, being greeted with a small smile by the old man as you continue on your way.
+
+//Fail//
+The guards pay you no mind as they continue beating on the old merchant and further destroying their wares.
+
+[[Continue-&gt;to the forest]]</tw-passagedata><tw-passagedata pid="30" name="good boy" tags="" position="1025,1650" size="100,100">//increase good karma//
+
+You pull the money from your coin purse and hand it to the guard. The smug look falling from his face before turing into a scoff and taking the coins from your hand. Yelling over to the other men before they all walk off leaving the merchant be, continuing onward the merchant gives you a greatful smile, as you move on your way twards the forest.
+
+[[Continue-&gt;to the forest]] </tw-passagedata><tw-passagedata pid="31" name="sidequest start" tags="" position="1300,1675" size="100,100">//increase good karma
+
+Felling confident with being able to handle the creatures that had been encountered twards the enternerence to the forest. As you begin to move deeper the trees grow more abundant and closer together, but there seems to be a slight change in the air as well. It didn&#39;t quite get thicker, but it feels like it is changing as if some kind of power is dancing across the very air itself. The same observation stretching to the trees as well, seeming to have a slightly unearthly glow to them, but your moment of wounder was broken by the sound of what faintly sounds like crying. Your ears barely able to pick up the sound as it faintly echos amoung the tress.
+
+[[Follow the sound of the voice-&gt;sidequest2]]
+
+[[Keep on moving-&gt;shame]] </tw-passagedata><tw-passagedata pid="32" name="sidequest2" tags="" position="1300,1800" size="100,100">Coming to realize that this is it,this is your chance to be the hero that you want to be, to help someone that is in need. Making an attempt to remain as quiet as possible, straining your ears for the crying that you had heard moments before. Eventually emerging out from amoung the thick grouping of trees into a small clearing, filled with all kinds of strange looking plants that you had never seem before, and in the middle of it is the source of the sobs that you had heard earlier. That being a small child, curled up, their knees pulled up to their chest and arms wrapped around them. They don&#39;t seem to notice your presence as they continue to cry.
+
+[[Slowly aproach them-&gt;sidequest3]]</tw-passagedata><tw-passagedata pid="33" name="shame" tags="" position="1450,1650" size="100,100">Your nerves get the better of you and decide to keep on moving. Trying to justify to yourself that their is nothing that you could do at your current strength anyways. But unfortuantly his thoughts weren&#39;t the only thing that were floating around in your head. Being met with the comments of the voice that you have become all too acustomed to.(text-style:&quot;italic&quot;)[Man, you are really bad at this kid, I though you wanted to save people, to help tham and become this &quot;hero&quot; you are so deadset on becoming.I&#39;m starting to think that you are only doing this for the money, for the glory. You don&#39;t want to help others out of the godness of your heart. Only thoese that are willing to line your pockets.]
+
+
+[[Continue-&gt;to the forest]]</tw-passagedata><tw-passagedata pid="34" name="sidequest3" tags="" position="1300,1925" size="100,100">You move slowly twards the child, drawing closer with each step. As you get within a few inches of the child, they suddenly whip their head up to look at you their eyes look like they are made up of the stary sky on a clear night. You could almost swear that they were moving as well, but the onservation was interupted by the small voice of the child. Speaking Barely above a whisper that you have to strain to hear them,
+
+&quot;Who are you?&quot;
+
+[[I am here to help-&gt;sidequest4]]
+
+[[Don&#39;t worry, I&#39;m a friend-&gt;sidequest4.1]]</tw-passagedata><tw-passagedata pid="35" name="sidequest4" tags="" position="1175,2025" size="100,100">The child seems unsure of your response, their body still trembling slightly as they continued to look at you.
+
+&quot;I don&#39;t scare you. Everyone else said that I&#39;m scary, calling me cursed.&quot;
+
+[[No, you don&#39;t scare me. I promise you have nothing to be afriad of from me.-&gt;sidequest5]]</tw-passagedata><tw-passagedata pid="36" name="sidequest4.1" tags="" position="1425,2025" size="100,100">The child relaxes a tiny bit but there is still a lot of visible tension within their body. Their are a few moments of silence before the child breaks the silence again.
+
+&quot;Friend? I&#39;ve never had one of thoese before. Is it a good thing?&quot;
+
+[[Yes, it is something that is very good. They are people that are willing to help you throgh times like these.-&gt;sidequest5]]</tw-passagedata><tw-passagedata pid="37" name="sidequest5" tags="" position="1300,2150" size="100,100">The child seems to relax almost completly at your response. After a few more moments pass you break the silence, using as soft of a tone as you could.
+
+&quot;So what&#39;s a child doing all the way out here in the forest by yourself.&quot;
+
+&quot;I ran away from home.&quot;
+
+&quot;Now why would you do that.&quot;
+
+&quot;The children of the village I live in say that I&#39;m cursed, that by the rules of the village I should have been abandoned at birth. So I ran away to here, a place that I know they will never find me.&quot;
+
+[[ Nobody deserves to be adandoned, no matter what anyone says. Come one let me help you get back home, your parents must be worried sick.-&gt;sidequest end]]</tw-passagedata><tw-passagedata pid="38" name="Other Thing2" tags="" position="1125,675" size="100,100">
+You mange to get enough money to hire a few mercenaries to do your bidding. A few months later you manage to assemble what you would consider to be a small army. Rallying your forces, you decide to raid the next village over and burn it to the ground.
+
+[[continue-&gt;Rading Village]]</tw-passagedata><tw-passagedata pid="39" name="Rading Village" tags="" position="1250,800" size="100,100">//Same type of code as the one noted in the pervious node. Again not sure if you want to use the code that I already have for it. Though it also needs to hev the chance for the army yo betray the player//
+
+//failed raid//
+Your army betrays you!
+
+  [[Betrayal!-&gt;berayed]]]
+  
+
+//shows up when the player hits a certin karma thershold//
+
+(text-style:&quot;italic&quot;)[Well Done! your getting pretty good at this, your starting to fill the role of bad guy rather nicely. Now tell me are you satisfied with just pillaging or killing? Or do you wish to get even higher to finally claim something that you could call your own . What Do you say?]
+  
+ [[What did you have in mind?-&gt;Proposition]]
+ 
+ [[Im actually pretty content here, there isn&#39;t much more that I desire-&gt;Altered Vers]]
+  
+  
+  //Sucessfull Raid
+  The raid was a sucess! 
+
+Screams and the warmth of fire filled the air as you and your army kill and pillage to your hearts content. Taking everything that you could carry and laoding it all on to wagons before finishing off the surviors and moving on to the next village.
+
+[[Move on to the next village|Rading Village]] 
+
+
+
+</tw-passagedata><tw-passagedata pid="40" name="sidequest end" tags="" position="1300,2275" size="100,100">You reach out a hand to the child, seemingly reluctant to take it at first, but after a moment they place their small hand into yours. And the two of you walk even deeper into the forest. You&#39;ve completly lost track of how long the two of you have been walking, but the child seems to grow more energetic with each step, talking about their village and how people like yourself aren&#39;t normally allowed to be brought there. Another few moments pass and you are just able to make out what apears to a wall made out of logs, in the middle of witch stands what appears to be an older version of the child that you are curently with. As you both draw closer you see that fugure at the gate tence and with that action, you feel an intence amount of pressure, almost as if you are being crushed by an invisible force. Your body begins to lock up, almost as if you have to manually will your body to move each individual limb, until you are unable to do even that. 
+You feel the eyes of the child on you for a moment, before their hand slips out of yours, or at least you think it is. It&#39;s very difficult for you to be able to focus on much of anything in this state.
+
+Your unsure of how long you had been stuck like this, but suddenly you had control of your body again, the entier experience catching you off guard as your body beagn to work like normal. So much so that you failed to notice the figure at the gate striding up to you with the child in tow, not even saying a single word as they agressivly grab you by the scruff of your neck and begins dragging you twards the gate.
+
+[[Hey! let me go-&gt;end part2]]
+
+[[Your gonna wish you didn&#39;t do this, your not gonna like me when I&#39;m mad-&gt;end part2]]</tw-passagedata><tw-passagedata pid="41" name="end part2" tags="" position="1300,2400" size="100,100">The pleas fall of deaf ears as the guard of the gate pays you no mind as they continue to drag you. Evntually you are dragged though the treshold of the gate and then a short distance later being brough into what appears to be a large basket. Before long the basket was rising high into the air. When it comes to a stop their isn&#39;t a single moment of pasue as you were dragged across rope bridges and even through a few strange buildings. All of it going by to fast for you to be able to process much of anything more, eventually you are brough into what seems to look like a very large room, but that is all you are able to be gleaned before you are abrutly dropped on the ground. Looking up you see that their is little in the room aside from what appears to be a small throne.
+
+Seated upon it is what looks to be an extermly large figure, their features lookin bloated and distored in comaprison to the others that you had seen while being dragged here. Your thoughts being interupted by the rumbling sound of the thing seated on the throne, it&#39;s voice carrying a suprising amount of authority even for their stature, almost as if you are being compleled to answer.
+
+&quot;So....you are the one that had returned the child back to this village.&quot;
+
+You find your head nodding yes before you can even thing to respond.
+
+&quot;It is normally foribiden to have humans brough into the sacred village of Ithica, but the child has taken quite the shine to you, so I have decided to make an aception. As a reward for bringin this child back to us I will allow you to be trained by the warriors here. As it is my understanding that you wish to be a hero.&quot;
+
+The room falls silent again as they await for your response.
+
+[[Accpet the training-&gt;result]]
+
+[[Deny the training-&gt;otherresult]]</tw-passagedata><tw-passagedata pid="42" name="result" tags="" position="1300,2525" size="100,100">//set time passded to true//
+//possibly reward the player with experience or skill points//
+
+
+You nod your head with a resolute yes, seeing this as an opportunity that you would never get the chance to take on again. You were escortted to the baracks where the warriors spent most of their time and as soon as you crossed the threshold your traning had began.
+
+It was a long a brutal 5 years, the people of Ithica were no slouches when it came to being procifcent in combat, the bodies moving like water in a stream and their attacks being just as deadly. While their were many times that you wnated to give up but you presevered. Today is the day that you leave the village not just as an up and coming hero but as a warrior of ithica, their were a few waves of goodby and a hug that had caught him off gurd by the child that you had saved so long ago. Walking back through the gate that you were dragged through so many years ago. Taking one last look back before you pounder where you are to head off to next.
+
+[[Head back to the capital-&gt;Bad thing]]
+
+[[Head into the mountains to continue your traning-&gt;Mountains]] </tw-passagedata><tw-passagedata pid="43" name="otherresult" tags="" position="1475,2400" size="100,100">After a few moments of deliberation, you decicde that their are greater adventures to be had.Ploitly declining the training offered and in turn being escortted out of the village, reciving one last way of goodbye by the child you had brough back before being pushed back through the same gate he was dragged through moments before. Pausing a moment to figure out where to head to next.
+
+[[Head back twards the enterence of the forest-&gt;to the forest]]
+
+[[Head twards the mountains and see what adventures can be found there-&gt;Mountains]] </tw-passagedata><tw-passagedata pid="44" name="Bad thing" tags="" position="1600,2550" size="100,100">You begin you journy back to the captial of Esteron, read to put your skills to the test and help the people their. Hoping to try and help buils up a better life for the common folk that live there. But as you are climbing up one of the last hills that seperates you from the sight of the capital you are met with a sight that opens up a pit in your stomach. As the sight in fronr of you was one that you hoped you wouldn&#39;t have to see, that being the captial up in flames as thick black smoke bellows up into the sky. 
+
+[[I have to go see what is going on-&gt;onward]]
+
+[[This is to much..I failed them-&gt;badend]]</tw-passagedata><tw-passagedata pid="45" name="fighting" tags="" position="1750,1200" size="100,100"></tw-passagedata><tw-passagedata pid="46" name="fighting2" tags="" position="1175,1675" size="100,100"></tw-passagedata><tw-passagedata pid="47" name="onward" tags="" position="1775,2550" size="100,100">Without another tough you begin running twards the captial, hoping that their is still something you can do. By the time you have made it through the scortched gates, all anrchy had broken lose. The soliders of the king and the common folk seem to be in an all out war with one another, the dead and wounded littering any avaliable surface. You continu running through the streets, determined to get into the castle and try to put a stop to this.
+
+As you arrive you find the place to pratically be abandoned, it seems like all the soliders have been sent out to fight the commoners. Walking up to and pushing open the large doors that lead inside, as you cross the tresh hold a shiver creeps up your spine as it feels like an omnious presence now lurks within the walls.
+
+Navigating through the dim and deserted halls eventually led to the door that housed the throne room of the king. You now stand if front of what could be your greatest foe yet, the only thing sseperating the both of you is this simple door. Are you ready?
+
+[[Yes-&gt;FInal confrontation]]</tw-passagedata><tw-passagedata pid="48" name="badend" tags="" position="1525,2675" size="100,100">The sight is just to much for you to be able to bear, the resolve that you had worked so hard to build up was shattered in an instantn. Without another though you turn around and run away from it all. And that&#39;s how you spent the next couple of years, just running away from everything, trying to erase the image of the cptial up in flames from your mind. Fruitlessly trying to find a redemption that will never come as you continue to do the only thing you&#39;ve ever known how to do. Run.
+
+[[Return to the start-&gt;The Start]]</tw-passagedata><tw-passagedata pid="49" name="FInal confrontation" tags="" position="1775,2675" size="100,100">You push open the door with ease and as you do so you have to fight every fiber of your being to not run away in fear. As inside is the king...or at least what was the king as they now look little more than a puppet with their strings cut. Dangling lifelessly in the air, steping closer a dark aura springs to life around them as a voice that you knew all to well began to speak.
+
+(text-style:&quot;italic&quot;)[Well well well, you just couldn&#39;t stay away could you. Frankly I&#39;m a little suprised that you had managed to survive this long.]
+
+Almost as if they could read your mind, they answer your question before you can even pose it.
+
+(text-style:&quot;italic&quot;)[Now your probly woundering how any of this is possible, well lets just say that the power that I hold can be quite vast when give enough time to pool it together. Allowing me to take over this worthless body and rule this kingdome as my own....after I burn it to the ground of course.]
+
+A peircing laugh fills the air after they finish their statement.
+
+[[Draw your wepon-&gt;final confrontation2]]</tw-passagedata><tw-passagedata pid="50" name="final confrontation2" tags="" position="1775,2800" size="100,100">(text-style:&quot;italic&quot;)[Aww that&#39;s cute, you think you can defeat me, all thoese who stand aginst me will DIE!]
+
+The king&#39;s body begins to violently watp and twist, acompanied by the snapping of bones and the poping of joins. The body growing in size as it is transformed into a monster none the likes you have ever seen.
+
+[[Fight-&gt;fight3]]</tw-passagedata><tw-passagedata pid="51" name="fight3" tags="" position="1775,2925" size="100,100">//combat script//
+
+//winning combat//
+You strike down the possed monster than was once the king, seeming to fade out of exsistence completly. The only proff that the king ever excistsed was their crown and the memories that you have. Without another though you place the crown on your head, deciding that it is time to make some real changes for the betterment of the people. Eventually becoming to be known as the true people&#39;s ruler.</tw-passagedata><tw-passagedata pid="52" name="Proposition" tags="" position="1200,975" size="100,100">{&lt;audio src=&quot;https://static.wixstatic.com/mp3/614230_b124412235a3459d9b68121ff44d8bf6.mp3&quot; autoplay loop&gt;
+} 
+ (text-style:&quot;italic&quot;)[Now that&#39;s what I&#39;m talking about, I think it is time that you took your army and started to aim higher up the ladder. Enough with these pesents and their meger possesions, I think it is time that you aimed for the big leagues.]
+
+[[You don&#39;t mean...-&gt;Next Big Thing]]</tw-passagedata><tw-passagedata pid="53" name="Altered Vers" tags="" position="1400,950" size="100,100"> {&lt;audio src=&quot;https://static.wixstatic.com/mp3/614230_b124412235a3459d9b68121ff44d8bf6.mp3&quot; autoplay loop&gt;
+}
+ (text-style:&quot;italic&quot;)[Aww come on now, were just starting to get to the good stuff, their is so much more than what is right in front of you. At least hear me out, I promise that it is something that is truly going to be worth your while.]
+
+[[Fine you got me, what is it that you have in mind-&gt;Next Big Thing]]</tw-passagedata><tw-passagedata pid="54" name="berayed" tags="" position="1425,700" size="100,100">{&lt;audio src=&quot;https://static.wixstatic.com/mp3/614230_b124412235a3459d9b68121ff44d8bf6.mp3&quot; autoplay loop&gt;
+}
+Before the planned surprise attack on the village next door, you felt cold steel move through your back and come out the front of you. Looking down you see a sword sticking out of your stomach. Before you could react, it is quickly pulled out, causing you to stumble and fall to the gorund. The last thing that you could see before everything went dark, was one of your hired mercanaires walking off with a bag of gold in one hand and a bloody sword in the other. 
+
+
+[[Return-&gt;Rading Village]]</tw-passagedata><tw-passagedata pid="55" name="Next Big Thing" tags="" position="1675,875" size="100,100">  (text-style:&quot;italic&quot;)[Yes, it is time that you take on the king and his castle, making it your own. Break down their walls with fire and destruction. Bring it all down to the gorund and rebuild it in your own image, bring the people here under your rule and in time that will too become a mere stepping stone along the way to true greatness.]
+
+[[But how am I going to manage that?-&gt;Answer]]
+
+[[Where would I ever get supplies and men like that?-&gt;Answer2]]
+
+[[I guess I better get to work then-&gt;What to do?]]</tw-passagedata><tw-passagedata pid="56" name="Answer" tags="" position="1550,1000" size="100,100">The only way you know how, steal and kill until you have enough money to obtaine the supplies that you need, or steall them yourself, eith way works for me honestly.
+
+[[Continue-&gt;Next Big Thing]] 
+
+[[Where would I ever get supplies and men like that?-&gt;Answer2]]</tw-passagedata><tw-passagedata pid="57" name="Answer2" tags="" position="1675,1000" size="100,100">But if you feel like putting that moutian of gold to good use, there are rumors of a merchant that has access to anything that one could desire, but be mindful. His prices aren&#39;t cheap. 
+
+[[Continue-&gt;What to do?]]</tw-passagedata><tw-passagedata pid="58" name="What to do?" tags="" position="1800,1000" size="100,100">I&#39;ve also heard their may be monsters willing to plaedge their alegience to you one way or another. I may also know of a church that may be swayed to worship you instead.You ponder all the information that you have been given and decide which lead you would like to go after.
+
+[[Seek out the merchant-&gt;Begin Sidequest]]
+
+[[Investigate the Tunelers-&gt;Monster Quest]]
+
+[[Investigate the Serpents-&gt;Monster Quest2]]
+
+[[Look into the church-&gt;Church Quest]]</tw-passagedata><tw-passagedata pid="59" name="Begin Sidequest" tags="" position="1875,800" size="100,100">With information in hand you punder how to go about looking for this myersious merchant?
+
+[[I&#39;m going to ask around some of the bar and gambling dens around town and see if anyone knows anything about them-&gt;Expo1]]
+
+[[I dont need anyones help, Ill find this person myself-&gt;Expo2]]</tw-passagedata><tw-passagedata pid="60" name="Monster Quest" tags="" position="1975,900" size="100,100">Deciding that the tunnelers may be worth something to look into, you walk twards the western gate of the capital. Walking out of the gate and twards the large hills and slopping valley that lay there. It took 2 days to get there and another 2 to find the eneterance to the domain of the tunnelers. Walking through the enterance you are met with the sight of what you can only describe as living pieces of scrap metal haphardly put together. They don&#39;t seem to be paying you an mind so you continue onward, eventually coming to an area that opens up to a large area, something that would be more akin to an arena if it wheren&#39;t for the large hulk mass of metal that occupies it.
+
+[[Fight it-&gt;combat2]]</tw-passagedata><tw-passagedata pid="61" name="Monster Quest2" tags="" position="1925,1150" size="100,100">Heading to the southern gate of the captial and walking throug it before adjusting corse and heading in the south eastern direction. Eventually even the feilds and the farms fade away and became replaced with vast bodies of water as far as the eye can see  and sitting on the largest body of water is a large castle made of what looked to be clay and stone. With a lone bridge made of drift wood leading from the shore to the inside. Where to serpent guards stand on either side of the bridge.
+
+[[I&#39;m here to see the queen, I believe that I can be of servious to her.-&gt;part3]]</tw-passagedata><tw-passagedata pid="62" name="Church Quest" tags="" position="2050,1025" size="100,100">Deciding that having a cult of devout followers would be the best thing to start with, you head to the southern gate of the capital. Exiting it and then heading to the east, it was mid day by the time you made it to the medum sized church. The sound of individual worship rining out through the walls of the building.
+
+[[Head Inside-&gt;part2]]
+
+[[Start somewhere else-&gt;What to do?]] </tw-passagedata><tw-passagedata pid="63" name="Expo1" tags="" position="2000,600" size="100,100">You go aound to variouse diffferent bars in the more shady partd of the village. Many of witch are far removed from the ever present gaze of the guards of the king. You manage to hear whispers of a group of claoked figures that are frequently seen lurking within the many alleyways within this part of the village. Rumor has it that they are deciples of the person that you are looking for.
 
 [[Try to pry for more information-&gt;Progress2]]
 
-[[Go based on the information that you have alreay gleaned-&gt;Next Step]]</tw-passagedata><tw-passagedata pid="40" name="Expo2" tags="" position="1225,1800" size="100,100">You decide that you don&#39;t need the help of anyone except for yourself, all you need to pick a direction and start looking.
+[[Go based on the information that you have alreay gleaned-&gt;Next Step]]</tw-passagedata><tw-passagedata pid="64" name="Expo2" tags="" position="2025,775" size="100,100">You decide that you don&#39;t need the help of anyone except for yourself, all you need to pick a direction and start looking.
 
 .......
 
@@ -323,212 +429,208 @@ The next couple of days pass with little acomplished, the most you had manged to
 
 [[Attempt to make sence of the symboles-&gt;Progress]]
 
-[[Give up and try to find information a different way-&gt;Expo1]] </tw-passagedata><tw-passagedata pid="41" name="Progress" tags="" position="1225,1950" size="100,100">(set:  _roll to (random: 1,20))
-(if: _roll &gt;=10)[You continue to stare and squint at the carvings that you have come across and suddenly it al begeins to unravel before you. You have come to learn that the symbols work like some kind of code and that the hooded figures that you have stumbled across are marking them for others of their kind to follow 
-
-[[Time to go find one-&gt;Next Step]]]
-
-(else:)[No matter how hard you try their isn&#39;t antyhing that makes any remote sense to you
-
-[[Keep trying -&gt;Progress]]
-
-[[Mabey you need to look for some help after all-&gt;Expo1]]]</tw-passagedata><tw-passagedata pid="42" name="Next Step" tags="" position="1100,2275" size="100,100">As you walk to the location that had been told, you notice how the stone pathways begin to fall away into nothing more than mud. The houses being nothing more than ruins and piles of rubble. It seems as if this part of the village has been abandoned for a very long time the only sing of life being the wind the blows through the air. After walking for several moments you see the structuture that you were told about, an old temple that looks like it has been standing for a thousand years. Strangly untouched by the rot and decaye of the other structures around it, you walk inside to find the interior to look like as it has been cared for all this tme. A red rug makes up the center of the floor followed by pews that make up either side of it. At the end of the rug stands a statue of something you don&#39;t recgonize, looking clser you see an inscription on the bottom that says: speak words true and the way shall open up to you.
-
-(if:$knowpass is true )[You speak the password and with a rumbling sound the statue moves to the side, revealing a stair well that leads downward
-
-[[Travel downward-&gt;BlackMarket]]]</tw-passagedata><tw-passagedata pid="43" name="Progress2" tags="" position="950,1975" size="100,100">You decide to try and pry for some more information from a group of men that apear to hev been drinking quite a bit during their time here.
+[[Give up and try to find information a different way-&gt;Expo1]] </tw-passagedata><tw-passagedata pid="65" name="Progress2" tags="" position="2150,525" size="100,100">You decide to try and pry for some more information from a group of men that apear to hev been drinking quite a bit during their time here.
 
 [[Threaten them with violence-&gt;Way1]]
 
-[[Offer to by them another drink in extange for the informaiton-&gt;Way2]]</tw-passagedata><tw-passagedata pid="44" name="Way1" tags="" position="1025,2100" size="100,100">(set: _roll to (random:1,20))
-(set:$Bkarma to +2)
+[[Offer to by them another drink in extange for the informaiton-&gt;Way2]]</tw-passagedata><tw-passagedata pid="66" name="Next Step" tags="" position="2175,650" size="100,100">s you walk to the location that had been told, you notice how the stone pathways begin to fall away into nothing more than mud. The houses being nothing more than ruins and piles of rubble. It seems as if this part of the village has been abandoned for a very long time the only sing of life being the wind the blows through the air. After walking for several moments you see the structuture that you were told about, an old temple that looks like it has been standing for a thousand years. Strangly untouched by the rot and decaye of the other structures around it, you walk inside to find the interior to look like as it has been cared for all this tme. A red rug makes up the center of the floor followed by pews that make up either side of it. At the end of the rug stands a statue of something you don&#39;t recgonize, looking clser you see an inscription on the bottom that says: speak words true and the way shall open up to you.
 
-(if: _roll &gt;= 16)[You stride up to the group a dark aura emminatting from your person, causing whatever conversation that they were having to be immediatly silenced. You asked them if they knew anything about thes hooded idivuals that you had hear so much about. They had quickly revealed the information, saying that the only way to find their master is to speak a certain password. Giving it to you with little resistance and the location to use it.
-(set:$knowpass to true)
+//shows up if knowing password is set to true//
+You speak the password and with a rumbling sound the statue moves to the side, revealing a stair well that leads downward
+
+[[Travel downward-&gt;BlackMarket]]]</tw-passagedata><tw-passagedata pid="67" name="Progress" tags="" position="2175,800" size="100,100">//dice roll to see if the player succedes of fails//
+
+
+//sucesseful dice roll//
+You continue to stare and squint at the carvings that you have come across and suddenly it al begeins to unravel before you. You have come to learn that the symbols work like some kind of code and that the hooded figures that you have stumbled across are marking them for others of their kind to follow 
+
+[[Time to go find one-&gt;Next Step]]]
+
+
+//failed dice roll//
+No matter how hard you try their isn&#39;t antyhing that makes any remote sense to you
+
+[[Keep trying -&gt;Progress]]
+
+[[Mabey you need to look for some help after all-&gt;Expo1]]]</tw-passagedata><tw-passagedata pid="68" name="Way1" tags="" position="2250,400" size="100,100">//suceede of fail roll//
+
+//suceeded roll/
+You stride up to the group a dark aura emminatting from your person, causing whatever conversation that they were having to be immediatly silenced. You asked them if they knew anything about thes hooded idivuals that you had hear so much about. They had quickly revealed the information, saying that the only way to find their master is to speak a certain password. Giving it to you with little resistance and the location to use it.
+
+//only visible if knowing password is true//
 [[Head to the location the men had mentioned-&gt;Next Step]]]
 
-(else:)[You try to apear as intiminating as possible to the men and ask your questions with as much indimidation as possible. But it seems that the men are either too drunk or simply are unfazed by your attempts st intimidation.
 
-[[Buy them a drink insted-&gt;Way2]]]</tw-passagedata><tw-passagedata pid="45" name="Way2" tags="" position="825,2100" size="100,100">(set:$Gkarma to +2)
-(set:$knowpass to true)
+//failed roll//
+You try to apear as intiminating as possible to the men and ask your questions with as much indimidation as possible. But it seems that the men are either too drunk or simply are unfazed by your attempts st intimidation.
+
+[[Buy them a drink insted-&gt;Way2]]]</tw-passagedata><tw-passagedata pid="69" name="Way2" tags="" position="2300,525" size="100,100">//increase good karma//
+//set knowing password to true//
+//subtract 50 coins from the player//
 
 You walk up to the bar tender and order three large mugs of whatever the group at the table had been drinking. Slaming them down on the table and speaking to them as if you were an old friend to them. After what felt like an eternety and one round of drinks ordered to many. You managed to get ahold of the information that you needed. Aprently the hooded figures work for the seller that you have been looking for, but the only way to get to him is throuhg the usage of a very specific password that only a few know. Lucky one of the increasingly drunk men at the table was a very rich merchanct that cared more about a good drink than where he curently was, gave up the information as if it was nothing more than everyday gossip. With information in had you head off ready to finally meet the man that you have been looking for all this time.
 
-[[Continue-&gt;Next Step]] </tw-passagedata><tw-passagedata pid="46" name="BlackMarket" tags="" position="1100,2400" size="100,100">Traveling down the stairs for what feels like several moments the tight spiral space gives way to a large cavern that is filled with many hooded figures moving about from place to place. Twords the middle of the room is a raised platform where a lage figure in much more ornate robes than the others. They are surrounded by creats and boxes of all other shapes and sizes, along with what apears to be a sizeable amount of gold as well.
+[[Continue-&gt;Next Step]] </tw-passagedata><tw-passagedata pid="70" name="BlackMarket" tags="" position="2325,650" size="100,100">Traveling down the stairs for what feels like several moments the tight spiral space gives way to a large cavern that is filled with many hooded figures moving about from place to place. Twords the middle of the room is a raised platform where a lage figure in much more ornate robes than the others. They are surrounded by creats and boxes of all other shapes and sizes, along with what apears to be a sizeable amount of gold as well.
 
 [[Aproach the platform and see if they will offer their services-&gt;Shop]]
 
-[[Look around to see if their is anything else of instres within the base-&gt;Wander]]</tw-passagedata><tw-passagedata pid="47" name="Shop" tags="" position="1100,2550" size="100,100">You walk twards the platform, the large figure above it remaning unmoving, even though its eyes are covered, you fell them boring into you. Almost as if it is waiting for you to make the first move.
+[[Look around to see if their is anything else of instres within the base-&gt;Wander]]</tw-passagedata><tw-passagedata pid="71" name="Wander" tags="" position="2450,750" size="100,100">Wandering around the cave you also notice that this place also seems to be a it more of a small town of its own. As you notice several cave opening with crude signs that depict services such as food, drink and a sleeping area. You also catch a glimps of other smaller hooded figures, most of which barely reaching you waist, while others seem t be much skinnyer in built, barely much taller than yourself. Aside from that their is little else that catches your intrest.
 
-[[Look for something to buy-&gt;ShopScreen]]
+[[Aproach the platform and see if they will offer their services-&gt;Shop]]</tw-passagedata><tw-passagedata pid="72" name="part2" tags="" position="2225,1050" size="100,100">You open the door to the church and start walking down the aisle with rows of pews  to the front where a figure in cergy robes with gold trim and a simple wooden cross drapped around his neck. As you draw closer he notices you there and with a wide smile starts speaking.
 
-[[Try to take this place for your self and the gold along with it-&gt;Ending2]]
+&quot;Welcome my child to the Church of Esteron, my name is Father Jobst Talkne the head of this flock. Now tell me what I can do for you on this blessed day.&quot;
 
-</tw-passagedata><tw-passagedata pid="48" name="Wander" tags="" position="1225,2550" size="100,100">Wandering around the cave you also notice that this place also seems to be a it more of a small town of its own. As you notice several cave opening with crude signs that depict services such as food, drink and a sleeping area. You also catch a glimps of other smaller hooded figures, most of which barely reaching you waist, while others seem t be much skinnyer in built, barely much taller than yourself. Aside from that their is little else that catches your intrest.
+(text-style:&quot;italic&quot;)[Ugh this amount of religion is sicknning, we should just kill him and get this over with.]
 
-[[Aproach the platform and see if they will offer their services-&gt;Shop]]</tw-passagedata><tw-passagedata pid="49" name="ShopScreen" tags="" position="975,2700" size="100,100">
+[[Kill the father-&gt;combat]]</tw-passagedata><tw-passagedata pid="73" name="combat" tags="" position="2375,1050" size="100,100">//combat script//
 
-(if:$coins &gt;= 130)
-[Large cannons and boxes of ammo, enough to tople the fragile castle walls
+I&#39;ve come to take this church as my own and if you won&#39;t bow to me then well, I have other ways. You begin to unsheath your wepon but the Father diesn&#39;t seem phased.
 
-[[Buy]]]
+&quot;You aren&#39;t the first heratic to try and courput the good word of the lord and you certaintly will not be the last.&quot; 
 
+A faint holly glow surrounding the father as you ready for combat.
 
-(if:$coins &gt;= 250)
-[Armor and swords, enough to fit out an entier army
+//Winning the fight//
+With one final swing of your wepon the father falls dead, blood spilling onto the ground. The rest of the congregation falls silent as they all start at you.
 
-[[Buy-&gt;Buy2]]]
+&quot;Anyone else!&quot; You shout, no one dare move or even say anything.
 
+&quot;This church is now under the following of me, any who oppose, well you see what happens.&quot;
 
-(if:$coins &gt;= 400)
-[A bundle of wands and septers, briming with some kind of power of its own]
+You guesture  to the dead father before turning on a heel and walking out.
 
-[[Buy-&gt;Buy3]]
+//set church support to true//
 
-(if:$coins &gt;= 2000)
-[A strangle glowing sphere, it apears to be surging with an unimaginable amount of power
+[[Who should you go after next?-&gt;What to do?]]
 
-[[Buy-&gt;Buy4]]]
+//only shows up when all three supports are true//
+[[Time to seige the caste-&gt;FInal Confrontation2]]</tw-passagedata><tw-passagedata pid="74" name="FInal Confrontation2" tags="" position="2500,1000" size="100,100">With your forces gathered in the wooded area on the outskirts of the capital ready to burn all of it to the ground. All that is left to do is signal for the charge against the castle walls. and with one swift motion you bring your hand down and your hordes become uneashed unto the wallks of the castle. The archers barely had any time to react the tunellers had already begun charging twards the walls, the archers arrows fruitsless against their metal bodies. The walls soon crumbling like they were made of paper, within the courtyard your remaining forces are tied up in vecious combat. Serpects are weaving through the soliders with ease and sliting their throats just as effectively. The newly coverted cultists are counteracting any magic from the king&#39;s wisards while whispering many deadly curses to be cast their way. In the midst of the chaos you take the opportunity to slip into the inner sanctun of the caslte.
 
+Making your way through until your standing in front of the door that leads to the king, without another thouhg you kick it down and their cowering behind their throne likw a cowerd is the king himself. Your unsure if the king had begged for mercy or not as the only thing that was on your mind being the blood lust of finally cutting him down. With a quick movement if your blade the king&#39;s head was seperated from his shoulders. But before you could claim the crown as your own somehting strange began to happen.
 
-(else:)[You don&#39;t have anything of value to offer
+[[Continue-&gt;final fight]]</tw-passagedata><tw-passagedata pid="75" name="combat2" tags="" position="2250,925" size="100,100">//combat script//
+The sound of you drawing your wepon seems to rouse the moster, seeming sencing that a fight is about to unfold. It&#39;self falling into some crude battle stance.
 
-[[Time to get back to work-&gt;Other Thing2]]]</tw-passagedata><tw-passagedata pid="50" name="Ending2" tags="" position="1100,2700" size="100,100">Your greed gets the better of you as you make an attempt to draw your sword. Already plotting how you are going to use everything to its fullest capability. But before your blade had been completly drawn a strange sensation fills your body, looking down you see that your feet have been turned into gold and was rapidly climbling up your body. You try to fight against it but in what felt like mere moments the aflict had already reached your neck before it completly ecases you, darkness filling your vision as the last thing you hear is a large harty laugh followed by one simple word....FOOL.
+//Winning battle//
+There is a large thud as the creature slams into the ground, shatteing into piece as it did so. On your way out you notice that the other tunnelers are kneeling to you. It seems that you have gained their support.
 
-GAME OVER!
+//make tunneler support true//
 
-[[Restart-&gt;The Start]]</tw-passagedata><tw-passagedata pid="51" name="Buy" tags="" position="850,2825" size="100,100">(set:$item1 to true)
+[[Who should you go after next?-&gt;What to do?]]
 
-You pull the money out of your pouch and before you cen even take a step it vanishes from your hand and in it resides a small capsule with the item that you intended to purchase.
+//only shows up when all three supports are true//
+[[Time to seige the caste-&gt;FInal Confrontation2]]</tw-passagedata><tw-passagedata pid="76" name="part3" tags="" position="2225,1225" size="100,100">The two gaurds glance at eachother for moment before one of them gestures to follow them. Travling with the gaurd across the brdige and into the castle. Being brough through various hallways and cordoors, the place feel a little bit like a maze. Eventually reaching a very compex looking room, filled with strnge looking trnkets and books scattered all over the place and in the middle of it all is a just as complex looking throne where a large serpet resides. The gaurd presents you to the serpect queen before turning to leave.
 
-[[Buy something else-&gt;ShopScreen]] 
+&quot;Oh, a human walks into my domain, no tell me what could you possibly so to help me?&quot;
 
-[[Prep for the final battle-&gt;Final Confrontation]]</tw-passagedata><tw-passagedata pid="52" name="Buy2" tags="" position="975,2825" size="100,100">(set:$item2 to true)
+[[I can start by taking off your head-&gt;combat3]]</tw-passagedata><tw-passagedata pid="77" name="combat3" tags="" position="2400,1225" size="100,100">//combat script//
 
-You pull the money out of your pouch and before you cen even take a step it vanishes from your hand and in it resides a small capsule with the item that you intended to purchase.
+These words seem to enrage the serpect queen as you barely have time to draw your wepon to fight her.
 
-[[Buy something else-&gt;ShopScreen]] 
+//winning combat//
+With one last mighty atack the serpect queen falls dead to the group. The serpent guards pour into the room only to see their queen dead and you standing over the corpse and may it have been out of fear or out of respect, they now bow down to you.
 
-[[Prep for the final battle-&gt;Final Confrontation]]</tw-passagedata><tw-passagedata pid="53" name="Buy4" tags="" position="725,2825" size="100,100">(set:$item4 to true)
+//make serpecnt support true//
 
-You pull the money out of your pouch and before you cen even take a step it vanishes from your hand and in it resides a small capsule with the item that you intended to purchase.
+[[Who should you go after next?-&gt;What to do?]]
 
-[[Buy something else-&gt;ShopScreen]] 
+//only shows up when all three supports are true//
+[[Time to seige the caste-&gt;FInal Confrontation2]]</tw-passagedata><tw-passagedata pid="78" name="final fight" tags="" position="2700,1000" size="100,100">A vortext of dark energy begins to swirl around the room, the force so strong that it threatnes to knock you over. A loud echoy voice begins to fill the room, a voice that you are intimately familiar with.
 
-[[Prep for the final battle-&gt;Final Confrontation]]</tw-passagedata><tw-passagedata pid="54" name="Buy3" tags="" position="1100,2825" size="100,100">(set:$item3 to true)
+(text-style:&quot;italic&quot;)[You didn&#39;t think it would be that easy kid, that I would just let you walz right in here and take the one thing that I have wanted for so long. Think agiain, it&#39;s now my time to shine, and I won&#39;t let any one get in my way.]
 
-You pull the money out of your pouch and before you cen even take a step it vanishes from your hand and in it resides a small capsule with the item that you intended to purchase.
+The vortet starts to spin faster and faster until it begings to pool together in the center of the room, revealing a dark towering figure. It&#39;s limbs long and twisted in all directions , its face prepetually covered in a cloud of darkness. Their voice sounds like a thousand people are talking all at once, as they continue speaking.
 
-[[Buy something else-&gt;ShopScreen]] 
+(text-style:&quot;italic&quot;)[It&#39;s time that this world saw what is was really like to be evil, it&#39;s nothing personal kid]
 
-[[Prep for the final battle-&gt;Final Confrontation]]</tw-passagedata><tw-passagedata pid="55" name="Final Confrontation" tags="" position="950,3000" size="100,100">With everything purchased and packed safely away, their was only one thing left to do and that was to seige the very castle that held the king of the land. If he feel then their would be nothing else to stand in your way of takign over the entier continent all together. You gather all your mercenaries together and buying any other supplies with your remaining money. Setting up camp out in the forests that surrounds the rest of the castle, the sun just begenning to set as the last of the tents were set up and the fores being built. You decide that now would be a good time to speak with your men.
+Thoese are the last words spoken before the creture lunges at you.
 
-[[Men gather round, there is soemthing I have to tell you-&gt;Part1]]
+[[Fight Back-&gt;Actual fight]]</tw-passagedata><tw-passagedata pid="79" name="Actual fight" tags="" position="2900,1000" size="100,100">//fight script//
 
-[[I believe there are a few things I should say-&gt;Part1]]</tw-passagedata><tw-passagedata pid="56" name="Expo3" tags="" position="450,1125" size="100,100">(set:  _roll to (random: 1,20))
-(if: _roll =14)[Many years had passed since you had set out, the one that had been trying to influence you down the path of evil had long since tried to speak to you anymore.You had been through many hardships and trials, but they had all made you better for it. You have saved kingdoms, slayed monsters larger than anyone could have ever imagined. With your name throughout the enteir continent and beyound, you decided that it was time to head back to where everything had began so long ago
+//Winning fight//
+You don&#39;t know how you did it but the creature no lays defeated and bleeding on the groud, black ozze steadily draining from it&#39;s body. It tries desperately to fight you but it has no strength left. Before long the darkness completly fades and along with it the creature itself. You walk over to the crown and place it on your head, makring the begining of the rain of what people would call the bloody ruler.</tw-passagedata><tw-passagedata pid="80" name="Init" tags="donotshowinventory" position="700,0" size="100,100">{(set: $inv to (a:))
 
-The Boring End]
+(set: $shopinv to (a:))
 
-(else:)[You managed to do alright out on your own for about a year before evrything started falling apart, first your equipment started to break, and then the money started to dry up as all the low level jobs were being taken up. The last straw was you going out to save a girl that had been kidnapped by monsteres from a nearby cave. Everything started off confident enough, you had taken out most of the monsters that had gotten in your way with little trouble. By the time you made it deeper into the cave it had opned up into a large space and inside it was filled with monsters as far as the eye can see and twards the back of the space on a raised platform was the girl you were looking for tied up. You fought hard and with everything that you had, but their was just to many of them, darkness filling you vision as your dreams finally shatters with your last breath.
+(set: $shopinv to $shopinv + (a: &quot;Sword&quot;, &quot;Shield&quot;, &quot;Potion&quot;))
 
-Bad End]</tw-passagedata><tw-passagedata pid="57" name="Part1" tags="" position="950,3125" size="100,100">They gather around you, waiting to hear what you have to say.
+(set: $karma to 0)
 
-[[Tomorrow is a big day, one larger than anyone of you could have imagined or even dreamed of. Something that is much greater than any one of us-&gt;Part2]]
+(set: $karmastatus to &quot;Good&quot;)
 
-[[The time has come to take a step above petty grunt work and move up to the big leagues, the holy grail-&gt;Part2]]</tw-passagedata><tw-passagedata pid="58" name="Part2" tags="" position="950,3250" size="100,100">We are going to seige the kings castle, lnock down his walls, slaughter his guards and take the castle for our own.
+(set: $coins to 0)
 
-[[Now who is with me!-&gt;FinalPart]]
+(set: $swordcost to 5)
 
-[[Gentalmen, who is ready to make history-&gt;FinalPart]]</tw-passagedata><tw-passagedata pid="59" name="FinalPart" tags="" position="950,3375" size="100,100">They seemed roused by your words, hooting and hollering filling the ire late into the night. The next morning while final preperations were being made by your army, you make a few of your own as well.
+(set: $shieldcost to 5)
 
+(set: $potioncost to 5)
 
-[[Let the mercenaries use their own gear-&gt;Bad Thing]]
+(set: $battleBeast to 0)
 
-(if: $item1 is true )[[[Fit them with the improved gear that you had purchased-&gt;Good Thing]]]</tw-passagedata><tw-passagedata pid="60" name="Bad Thing" tags="" position="850,3500" size="100,100">You decide to let your army use the gear that they are the most familar with, hoping that it will make them the most efficent. With the preperations made you exit the tent and take your place at the front of the army. With a loud battle cry piercing through the midmorning air you and your men run out of the forest, many almost immediately falling to the volley of arrows that met them, cutusy of the archers that had seen them spilling forth like a tidle waves twards the castle walls. You even take a few arrows of your own during the charge, you and the remains of your army make it about 10 feet from the walls of the castle before the rest of your army is felled by the endless barage or arrows, followed shorty after by you. QUickly over come by your wounds as everything fades to black.
+(set: $level to 1)
 
-GAME OVER!
+(set: $levelIncrement to 1)
 
-[[Restart-&gt;The Start]] </tw-passagedata><tw-passagedata pid="61" name="Good Thing" tags="" position="1075,3500" size="100,100">Taking the capsule out of your pack and step out of your tent and tossing it on the ground. In a puff of somoke apears stands or armor and wracks of wepons as far as the eye can see. You distribute the new gear to the mercanries, replacing their leather garb with plate and their won wepons with brand new ones. Once they had all been outfited with their new equiment they fall into formatinon with you at the helm. Taking your place at the front, battle cries pierce the air as they make their charge out of the forest and twards the castle walls. Being met with a volley of arrows from the archers station on the walls, many of them bouncing off of the new armor of his army, but a few still falling to the sheer qualitity of the arrows none the less. You and your army had made it within 10 feet of the wall, pondering your next move as it draws closer.
+(set: $LevelUpXP to 10)
 
-[[Scale the walls and try to get to the top-&gt;Bad Thing2]]
+(set: $strength to 0)
+(set: $intelligence to 0)
+(set: $defense to 0)
+(set: $specialdefense to 0)
+(set: $totalPoints to 5)
+    (replace: ?strengthStat)[|strengthStat&gt;[$strength]]
+    (replace: ?intelligenceStat)[|intelligenceStat&gt;[$intelligence]]
+    (replace: ?defenseStat)[|defenseStat&gt;[$defense]]
+    (replace: ?specialdefense)[|specialdefenseStat&gt;[$specialdefense]]
+    (replace: ?pointsStat)[|pointsStat&gt;[$totalPoints]]
+    
+(set: $health to 30)
+}
+
+[[Begin|Disclaimer]]
+
+</tw-passagedata><tw-passagedata pid="81" name="Footer" tags="footer" position="200,100" size="100,100">(if: (passage:)&#39;s name is &quot;Inventory&quot;)[&lt;!--Do nothing--&gt;]
+(else-if: (passage:)&#39;s tags contains &quot;donotshowinventory&quot;)[&lt;!--Do nothing--&gt;]
+(else:)[Check [[Inventory]]
+[[Allocate Stats]] ]</tw-passagedata><tw-passagedata pid="82" name="Inventory" tags="donotshowinventory" position="100,300" size="100,100">{&lt;audio src=&quot;https://static.wixstatic.com/mp3/614230_32951e17c57747a6a56f7e4c0b04d23c.mp3&quot; autoplay loop&gt;
+}
+Your inventory contains a (print:  $inv)
+(click: &quot;Sword&quot;)[(display: &quot;sword&quot;)]
+(click: &quot;shield&quot;)[(display: &quot;keys&quot;)]
+(click: &quot;potion&quot;)[(display: &quot;cyberdeck&quot;)]
+
+(link-goto: &quot;Return&quot;, (history:)&#39;s last) </tw-passagedata><tw-passagedata pid="83" name="Allocate Stats" tags="" position="300,300" size="100,100">{&lt;audio src=&quot;https://static.wixstatic.com/mp3/614230_32951e17c57747a6a56f7e4c0b04d23c.mp3&quot; autoplay loop&gt;
+}
+{
+(set: $level to $level)
+(set: $levelIncrement to $levelIncrement)
+(set: $LevelUpXP to $LevelUpXP)
+(if: $xp &gt;= $LevelUpXP)[
+(link: &quot;|Level UP|&quot;)[
+(set: $level to it + 1)
+(set: $levelIncrement to it + 1)
+(set: $xp to $xp - $LevelUpXP)
+(set: $totalPoints to $totalPoints +5)
+(set: $LevelUpXP to $LevelUpXP * $levelIncrement)
+(replace: ?levelStat)[|levelStat&gt;[$level]]
+(replace: ?levelupxp)[|levelupxp&gt;[$LevelUpXP]
+(replace: ?xp)|xp&gt;[$xp]
+(replace: ?pointsStat)[|pointsStat&gt;[$totalPoints]]
+]
+]
+]
+}
+
+Level: |levelStat&gt;[$level]
+Points Needed: |levelupxp&gt;[$LevelUpXP]
+Experience: |xp&gt;[$xp]
+Strength: |strengthStat&gt;[$strength]
+Intelligence: |intelligenceStat&gt;[$intelligence]
+Defense: |defenseStat&gt;[$defense]
+Special Defense: |specialdefense&gt;[$specialdefense]
+Remaining Points: |pointsStat&gt;[$totalPoints]
 
-(if:$item2 is true )[[[Deploy the capsle with the cannons-&gt;Good Thing2]]]</tw-passagedata><tw-passagedata pid="62" name="Bad Thing2" tags="" position="975,3625" size="100,100">You give the command to start climbing the walls to get to the top. Under the fire of arrows the mercenaries began unload some of the segie supplies tha they had brought with them, quickly building ladders and grppling hooks and passing them out to everyone. Several of them had manged to hit true and so they begn to make their way up the walls. Many of your soldiers had it about half way up the endless amount of arrows being fired at them had suddenly stopped, looking up you see why they had stopped, you tried to shout orders, a warning, something but it was alreadt to later. The archers where already tipping over large cauldrouns of scalding oil and water alike. Cuasing any mercenary on the wall to either be burned alive or fall to their death their numbers began to dwindle rapidly. So you decide to retreat with your life waiting for this whole mess to blow over and next time take more planning into conisderation next time and hope things go better.
-
-[[Restart-&gt;The Start]] </tw-passagedata><tw-passagedata pid="63" name="Good Thing2" tags="" position="1200,3625" size="100,100">While running twwrds the wall you abruptly stop amounst the endless fire of arrows, quickly rummaging throuhg your pack and producing another capsle. Slamming it down on the ground as another puff of somke engunfls you, disipating a few moments later revealing several large cannons and boxes of ammunition. You give the order to load and fire the cannons as quickly as possible, doing as their told sevral groups of mercenaries stop and begin loading them while the others dove for cover waiting util the coast was clear. It was a few mometns later when loud explosions fill the air as several connon balls crash into the wall of the castle cuasing cracks to form and bricks to fall away from the point of impact. It only took one more volley before the archers had abandoned their post and another teo before the wall had completly colapsed inwards, leaving a large pile of rubble. You lead yoour army over the rubble and into the castle coutyard where they had come face to face with the kings very own army stationed at the castle, each side only staring down at the other for a moment before charging. You make your way through the battlefeild, doding blades trying not to be struck before finally make it to the large grand door that leads to the inside of the castle. Making your way inside of the lavish space, you begin running down the halls looking for the throne roon, but not beofore you come face to face with a tall robed figure with an old looking wooden staff. Without even a moment passing he begins charging some kind of power into his being as his body begins to glow.
-
-[[Charge him before he finishes-&gt;Bad Thing3]]
-
-(if:$item3 is true)[[[Use one of the wands you had obtained-&gt;Good Thing3]]]
-
-(if:$item4 is true)[[[Use the strange glowing orb-&gt;Goodidh Thing]]]</tw-passagedata><tw-passagedata pid="64" name="Bad Thing3" tags="" position="1200,3750" size="100,100">You decide that their is no time to waste, charging twards the robed man sword ready to cut them down. But before the could get close enough to strike the figure points their staff twards you and a beam of white engery erupts from it. Engulfing you completly only seeing the bright light of the attack followed quickly by the darkness of oblivion.
-
-GAME OVER!
-
-[[Restart-&gt;The Start]] </tw-passagedata><tw-passagedata pid="65" name="Goodidh Thing" tags="" position="1075,3750" size="100,100">Thinking quickly you pull another capsule out of your pack, crushing it into your hand a puff of smoke appearing before disipating and revealing the glowing orb that you had acuired before. You don&#39;t even get a moment to attempt to use it before you see the power being gathered by the robed figure fades. Their eyes meeting yours filled with fear before they chanel another type of power, finishing in a bright flash of light, when your eyes readjust you see that they have compeltly disapeared without a trace.
-
-[[Continue-&gt;Finally]] </tw-passagedata><tw-passagedata pid="66" name="Good Thing3" tags="" position="1325,3750" size="100,100">Thinking quickly you pull another capsule out of your pack, crushing it into your hand a puff of smoke appearing before disipating and revealing a wand in their hand. Taking a gamble you wave it around hopping for something to happend, eventually the wand starts to glow and a small beam of energy shoots from it. Shooting staright through the robed figure as the power fades from their body and they fall over onto the floor dead.
-
-[[Continue-&gt;Finally]] </tw-passagedata><tw-passagedata pid="67" name="Finally" tags="" position="1200,3900" size="100,100">You make your way to the end of the hall and find a pair of ornate doors, kicking them open with ease revealing the throne room, empty acept for a figure cowering behind their thorne. Getting close you see that it is no one else but the king themselves, appearing to be old and decrepid, their legs barely able to support them. They look at you absolute fear in their eyes as without a second though you draw your sword and seiftly bring it down. Thiier head falling to the ground and rolling away followed shortly by their body, bending down to pick up the crown and place it on your head. Sitiing in your newly acquired throne as you savor in your victory.
-
-
-You got the fun ending!
-
-[[Play Again-&gt;The Start]] </tw-passagedata><tw-passagedata pid="68" name="Dice Roll and Skill Point System" tags="" position="800,75" size="100,100">(set: $randomMin to 1)
-(set: $randomMax to 4)
-
-(set: $rollResult to (random: $randomMin, $randomMax))
-
-You rolled a $rollResult.
-
-(set: $randomMin to 1)
-(set: $randomMax to 6)
-
-(set: $rollResult to (random: $randomMin, $randomMax))
-
-You rolled a $rollResult.
-
-(set: $randomMin to 1)
-(set: $randomMax to 8)
-
-(set: $rollResult to (random: $randomMin, $randomMax))
-
-You rolled a $rollResult.
-
-(set: $randomMin to 1)
-(set: $randomMax to 10)
-
-(set: $rollResult to (random: $randomMin, $randomMax))
-
-You rolled a $rollResult.
-
-(set: $randomMin to 1)
-(set: $randomMax to 10)
-
-(set: $rollResult to (random: $randomMin, $randomMax))
-
-You rolled a $rollResult.
-
-(set: $randomMin to 1)
-(set: $randomMax to 12)
-
-(set: $rollResult to (random: $randomMin, $randomMax))
-
-You rolled a $rollResult.
-
-(set: $randomMin to 1)
-(set: $randomMax to 20)
-
-(set: $rollResult to (random: $randomMin, $randomMax))
-
-You rolled a $rollResult.
-
-
-Strength: |strengthStat&gt;[0]
-Intelligence: |intelligenceStat&gt;[0]
-Defense: |defenseStat&gt;[0]
-Special Defense: |specialdefense&gt;[0]
-Remaining Points: |pointsStat&gt;[45]
 
 Strength: 
 {
@@ -536,6 +638,7 @@ Strength:
     (if: $totalPoints &gt; 0)[
     (set: $strength to it + 1)
     (set: $totalPoints to it - 1)
+    (if: $strength &gt; 18)[(set: $strength to 18) (set: $totalPoints to it + 1)]
     (replace: ?strengthStat)[|strengthStat&gt;[$strength]]
     (replace: ?pointsStat)[|pointsStat&gt;[$totalPoints]]
     ]
@@ -557,6 +660,7 @@ Intelligence:
     (if: $totalPoints &gt; 0)[
     (set: $intelligence to it + 1)
     (set: $totalPoints to it - 1)
+     (if: $intelligence &gt; 18)[(set: $intelligence to 18) (set: $totalPoints to it + 1)]
     (replace: ?intelligenceStat)[|intelligenceStat&gt;[$intelligence]]
     (replace: ?pointsStat)[|pointsStat&gt;[$totalPoints]]
     ]
@@ -578,6 +682,7 @@ Defense:
     (if: $totalPoints &gt; 0)[
     (set: $defense to it + 1)
     (set: $totalPoints to it - 1)
+     (if: $defense &gt; 18)[(set: $defense to 18) (set: $totalPoints to it + 1)]
     (replace: ?defenseStat)[|defenseStat&gt;[$defense]]
     (replace: ?pointsStat)[|pointsStat&gt;[$totalPoints]]
     ]
@@ -599,7 +704,8 @@ Special Defense:
     (if: $totalPoints &gt; 0)[
     (set: $specialdefense to it + 1)
     (set: $totalPoints to it - 1)
-    (replace: ?specialdefenseStat)[|specialdefenseStat&gt;[$specialdefense]]
+     (if: $specialdefense &gt; 18)[(set: $specialdefense to 18) (set: $totalPoints to it + 1)]
+    (replace: ?specialdefense)[|specialdefenseStat&gt;[$specialdefense]]
     (replace: ?pointsStat)[|pointsStat&gt;[$totalPoints]]
     ]
   ]
@@ -608,10 +714,12 @@ Special Defense:
     (if: $specialdefense &gt; 0)[
     (set: $specialdefense to it - 1)
     (set: $totalPoints to it + 1)
-    (replace: ?specialdefenseStat)[|specialdefenseStat&gt;[$specialdefense]]
+    (replace: ?specialdefense)[|specialdefenseStat&gt;[$specialdefense]]
     (replace: ?pointsStat)[|pointsStat&gt;[$totalPoints]]
     ]
   ]
+    
+  
 }
 
 {
@@ -620,92 +728,55 @@ Special Defense:
     (set: $intelligence to 0)
     (set: $defense to 0)
     (set: $specialdefense to 0)
-    (set: $totalPoints to 45)
+    (set: $totalPoints to 5 * $level)
+    
+    
     (replace: ?strengthStat)[|strengthStat&gt;[$strength]]
     (replace: ?intelligenceStat)[|intelligenceStat&gt;[$intelligence]]
     (replace: ?defenseStat)[|defenseStat&gt;[$defense]]
     (replace: ?specialdefense)[|specialdefenseStat&gt;[$specialdefense]]
     (replace: ?pointsStat)[|pointsStat&gt;[$totalPoints]]
   ]
+  
+   (link-repeat: &quot;|Confirm Points|&quot;)[
+    (set: $strength to $strength)
+    (set: $intelligence to $intelligence)
+    (set: $defense to $defense)
+    (set: $specialdefense to $specialdefense)
+    (set: $totalPoints to $totalPoints)
+    (replace: ?strengthStat)[|strengthStat&gt;[$strength]]
+    (replace: ?intelligenceStat)[|intelligenceStat&gt;[$intelligence]]
+    (replace: ?defenseStat)[|defenseStat&gt;[$defense]]
+    (replace: ?specialdefense)[|specialdefenseStat&gt;[$specialdefense]]
+    (replace: ?pointsStat)[|pointsStat&gt;[$totalPoints]]
+    
+  ]
+  
+  (link-goto: &quot;Return&quot;, (history:)&#39;s last)
 }
-
-(link: &quot;Make a Strength check?&quot;)[
-  (set: _result to (random: 1, 6) + $strength)
-  (if: _result &gt;= 15)[
-  Strength Success! (_result &gt;= 15)
-  ](else:)[
-  Strength Failure! (_result &lt; 15)
-  ]
-]
-(link: &quot;Make an Intelligence check?&quot;)[
-  (set: _result to (random: 1, 6) + $intelligence)
-  (if: _result &gt;= 15)[
-  Intelligence Success! (_result &gt;= 15)
-  ](else:)[
-  Intelligence Failure! (_result &lt; 15)
-  ]
-]
-(link: &quot;Make a Defense check?&quot;)[
-  (set: _result to (random: 1, 6) + $defense)
-  (if: _result &gt;= 15)[
-  Defense Success! (_result &gt;= 15)
-  ](else:)[
-  Defense Failure! (_result &lt; 15)
-  ]
-]
-(link: &quot;Make a Special Defense check?&quot;)[
-  (set: _result to (random: 1, 6) + $specialdefense)
-  (if: _result &gt;= 15)[
-  Special Defense Success! (_result &gt;= 15)
-  ](else:)[
-  Special Defense Failure! (_result &lt; 15)
-  ]
-]`Verbatim Text`</tw-passagedata><tw-passagedata pid="69" name="Footer" tags="footer" position="300,1300" size="100,100">(if: (passage:)&#39;s name is &quot;Inventory&quot;)[&lt;!--Do nothing--&gt;]
-(else-if: (passage:)&#39;s tags contains &quot;donotshowinventory&quot;)[&lt;!--Do nothing--&gt;]
-(else:)[Check [[Inventory]].]
-(if: (passage:)&#39;s name is &quot;Store&quot;)[&lt;!--Do nothing--&gt;]
-(else-if: (passage:)&#39;s tags contains &quot;donotshowshop&quot;)[&lt;!--Do nothing--&gt;]
-(else:)[Check [[Store]].]
-</tw-passagedata><tw-passagedata pid="70" name="Inventory" tags="" position="300,1500" size="100,100">Your inventory contains a (print:  $inv)
-(click: &quot;Sword&quot;)[(display: &quot;sword&quot;)]
-(click: &quot;shield&quot;)[(display: &quot;keys&quot;)]
-(click: &quot;potion&quot;)[(display: &quot;cyberdeck&quot;)]
-
-(link-goto: &quot;Return&quot;, (history:)&#39;s last) </tw-passagedata><tw-passagedata pid="71" name="Karma" tags="" position="500,1300" size="100,100">(if: $karma is &gt;= 5)[(set: $karmastatus to &quot;Good&quot;)]
-
-(else-if: $karma is &lt;= -5)[(set: $karmastatus to &quot;Bad&quot;)]
-
-(else-if: $karma is &gt; -5)[(set: $karmastatus to &quot;Neutral&quot;)]
-
-(else-if: $karma is &lt; 5)[(set: $karmastatus to &quot;Neutral&quot;)]
-</tw-passagedata><tw-passagedata pid="72" name="Store" tags="" position="500,1500" size="100,100">(print: $shopinv)
-
-(if: $coins &gt;= $swordcost)[(click: &quot;Sword&quot;)[[Buy Sword?]]]
-
-(if: $sword is true)[You has sword...]
-
-(if:$coins &gt;= $shieldcost)[(click: &quot;Shield&quot;)[[Buy Shield?]]]
-
-(if:$coins &gt;= $potioncost)[(click: &quot;Potion&quot;)[[Buy Potion?]]]
-
-(else:)[You do not have enough coins. You have $coins coins.]
-
-[[Return|Footer]] 
-</tw-passagedata><tw-passagedata pid="73" name="Buy Sword?" tags="" position="200,1700" size="100,100">(set:$purchaseditem to &quot;Sword&quot;)
+ </tw-passagedata><tw-passagedata pid="84" name="Buy Sword?" tags="" position="50,975" size="100,100">{&lt;audio src=&quot;https://static.wixstatic.com/mp3/614230_32951e17c57747a6a56f7e4c0b04d23c.mp3&quot; autoplay loop&gt;
+}
+(set:$purchaseditem to &quot;Sword&quot;)
 
 [[Buy Sword for $swordcost coins|Spend Coins]]
 
-(link-goto: &quot;Return&quot;, (history:)&#39;s last) </tw-passagedata><tw-passagedata pid="74" name="Buy Shield?" tags="" position="400,1700" size="100,100">(set:$purchaseditem to &quot;Shield&quot;)
+(link-goto: &quot;Return&quot;, (history:)&#39;s last) </tw-passagedata><tw-passagedata pid="85" name="Buy Shield?" tags="" position="37.5,1100" size="100,100">{&lt;audio src=&quot;https://static.wixstatic.com/mp3/614230_32951e17c57747a6a56f7e4c0b04d23c.mp3&quot; autoplay loop&gt;
+}
+(set:$purchaseditem to &quot;Shield&quot;)
 
 [[Buy Shield for $shieldcost coins|Spend Coins]]
 
 
 
-(link-goto: &quot;Return&quot;, (history:)&#39;s last) </tw-passagedata><tw-passagedata pid="75" name="Buy Potion?" tags="" position="600,1700" size="100,100">(set:$purchaseditem to &quot;Potion&quot;)
+(link-goto: &quot;Return&quot;, (history:)&#39;s last) </tw-passagedata><tw-passagedata pid="86" name="Buy Potion?" tags="" position="162.5,1100" size="100,100">{&lt;audio src=&quot;https://static.wixstatic.com/mp3/614230_32951e17c57747a6a56f7e4c0b04d23c.mp3&quot; autoplay loop&gt;
+}
+(set:$purchaseditem to &quot;Potion&quot;)
 
 [[Buy Potion for $potioncost coins|Spend Coins]]
 
-(link-goto: &quot;Return&quot;, (history:)&#39;s last) </tw-passagedata><tw-passagedata pid="76" name="Spend Coins" tags="donotshowinventory donotshowshop" position="400,1900" size="100,100">(if: $purchaseditem is &quot;Sword&quot;)[(set: $coins to $coins - $swordcost)(set: $sword to true)(set: $shopinv to $shopinv - (a: &quot;Sword&quot;))(set: $inv to $inv + (a: &quot;Sword&quot;))]
+(link-goto: &quot;Return&quot;, (history:)&#39;s last) </tw-passagedata><tw-passagedata pid="87" name="Spend Coins" tags="" position="37.5,1225" size="100,100">{&lt;audio src=&quot;https://static.wixstatic.com/mp3/614230_32951e17c57747a6a56f7e4c0b04d23c.mp3&quot; autoplay loop&gt;
+}
+(if: $purchaseditem is &quot;Sword&quot;)[(set: $coins to $coins - $swordcost)(set: $sword to true)(set: $shopinv to $shopinv - (a: &quot;Sword&quot;))(set: $inv to $inv + (a: &quot;Sword&quot;))]
 
 (if: $purchaseditem is &quot;Shield&quot;)[(set: $coins to $coins - $shieldcost)(set: $sheild to true)(set: $shopinv to $shopinv - (a: &quot;Shield&quot;))(set: $inv to $inv + (a: &quot;Shield&quot;))]
 
@@ -713,7 +784,7 @@ Special Defense:
 
 You now have $coins coins.
 
-[[Return|Init]] </tw-passagedata><tw-passagedata pid="77" name="sword" tags="" position="700,1500" size="100,100">I bought this Sword from the shop, Looks like it can do some damage!</tw-passagedata></tw-storydata>
+[[Return|Shop]] </tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
